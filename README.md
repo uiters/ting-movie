@@ -1,4 +1,4 @@
-# movie-showtimes
+# ting-movie
 
 > 🎦 Find Movie Showtimes & Buy Tickets.
 
@@ -16,4 +16,4 @@ $ npm start
 
 ## License
 
-![](https://img.shields.io/github/license/cuongw/movie-showtimes.svg?style=flat-square)
+![](https://img.shields.io/github/license/cuongw/ting-movie.svg?style=flat-square)
