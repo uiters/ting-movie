@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router} from "react-router-dom";
-import {Movies} from './containers';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 class App extends Component {
   render() {
-    return (
-      <Router>
-        <Movies/>
-      </Router>
-    );
+    return <Router />;
   }
 }
 
