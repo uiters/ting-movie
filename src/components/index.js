@@ -1,0 +1,17 @@
+export { default as Loader } from './Loader';
+export { default as HeaderNavigation } from './HeaderNavigation';
+export { default as Slider } from './Slider';
+export { default as SearchForm } from './SearchForm';
+export { default as LatestMovies } from './LatestMovies';
+export { default as UpcomingMovies } from './UpcomingMovies';
+export { default as HowItWorks } from './HowItWorks';
+export { default as Counter } from './Counter';
+export { default as BecomePremium } from './BecomePremium';
+export { default as Blog } from './Blog';
+export { default as Subscribe } from './Subscribe';
+export { default as Footer } from './Footer';
+export { default as HeaderSearch } from './HeaderSearch';
+export { default as SignIn } from './SignIn';
+export { default as SignUp } from './SignUp';
+export { default as ForgetPassword } from './ForgetPassword';
+export { default as BackToTop } from './BackToTop';
