@@ -34,7 +34,7 @@ export default function() {
               {/* Start of Buttons */}
               <div className="buttons">
                 <a
-                  href="https://www.youtube.com/watch?v=Q0CbN8sfihY"
+                  href="https://www.youtube.com/watch?v=WIbe-PmR5vk"
                   className="play-video"
                 >
                   <i className="fa fa-play" />
@@ -80,7 +80,7 @@ export default function() {
               {/* Start of Buttons */}
               <div className="buttons">
                 <a
-                  href="https://www.youtube.com/watch?v=Q0CbN8sfihY"
+                  href="https://www.youtube.com/watch?v=WIbe-PmR5vk"
                   className="play-video"
                 >
                   <i className="fa fa-play" />
@@ -126,7 +126,7 @@ export default function() {
               {/* Start of Buttons */}
               <div className="buttons">
                 <a
-                  href="https://www.youtube.com/watch?v=Q0CbN8sfihY"
+                  href="https://www.youtube.com/watch?v=WIbe-PmR5vk"
                   className="play-video"
                 >
                   <i className="fa fa-play" />
@@ -172,7 +172,7 @@ export default function() {
               {/* Start of Buttons */}
               <div className="buttons">
                 <a
-                  href="https://www.youtube.com/watch?v=Q0CbN8sfihY"
+                  href="https://www.youtube.com/watch?v=WIbe-PmR5vk"
                   className="play-video"
                 >
                   <i className="fa fa-play" />
@@ -218,7 +218,7 @@ export default function() {
               {/* Start of Buttons */}
               <div className="buttons">
                 <a
-                  href="https://www.youtube.com/watch?v=Q0CbN8sfihY"
+                  href="https://www.youtube.com/watch?v=WIbe-PmR5vk"
                   className="play-video"
                 >
                   <i className="fa fa-play" />
@@ -264,7 +264,7 @@ export default function() {
               {/* Start of Buttons */}
               <div className="buttons">
                 <a
-                  href="https://www.youtube.com/watch?v=Q0CbN8sfihY"
+                  href="https://www.youtube.com/watch?v=WIbe-PmR5vk"
                   className="play-video"
                 >
                   <i className="fa fa-play" />

@@ -20,7 +20,7 @@ Author URI: gnodesign.com
       LOADING PAGE
     ----------------------------------------------------*/
     $(window).on('load', function () {
-        var loading = $('.loading');
+        const loading = $('.loading');
         loading.delay(1000).fadeOut(1000);        
     }); // end of window load function
 

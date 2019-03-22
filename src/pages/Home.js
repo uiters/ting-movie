@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import loadjs from 'loadjs';
 import {
+  Loader,
   Slider,
   SearchForm,
   LatestMovies,
@@ -16,8 +17,16 @@ export default class extends Component {
   componentWillMount() {
     const publicUrl = process.env.PUBLIC_URL;
     loadjs([
-      `${publicUrl}/js/imagesloaded.pkgd.min.js`,
+      `${publicUrl}/js/custom.js`,
+      `${publicUrl}/js/bootstrap.min.js`,
+      `${publicUrl}/js/jquery.ajaxchimp.js`,
+      `${publicUrl}/js/jquery.magnific-popup.min.js`,
+      `${publicUrl}/js/jquery.mmenu.js`,
+      `${publicUrl}/js/jquery.inview.min.js`,
+      `${publicUrl}/js/jquery.countTo.min.js`,
+      `${publicUrl}/js/jquery.countdown.min.js`,
       `${publicUrl}/js/owl.carousel.min.js`,
+      `${publicUrl}/js/imagesloaded.pkgd.min.js`,
       `${publicUrl}/js/isotope.pkgd.min.js`,
       `${publicUrl}/js/headroom.js`,
       `${publicUrl}/js/custom.js`,
@@ -31,12 +40,13 @@ export default class extends Component {
       `${publicUrl}/revolution/js/extensions/revolution.extension.navigation.min.js`,
       `${publicUrl}/revolution/js/extensions/revolution.extension.parallax.min.js`,
       `${publicUrl}/revolution/js/extensions/revolution.extension.slideanims.min.js`,
-      `${publicUrl}/revolution/js/extensions/revolution.extension.video.min.js`
+      `${publicUrl}/revolution/js/extensions/revolution.extension.video.min.js`,
     ]);
   }
   render() {
     return (
       <div>
+        <Loader />
         <section id="slider" className="full-slider">
           <Slider />
           <SearchForm />

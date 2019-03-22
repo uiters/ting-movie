@@ -7,8 +7,7 @@ import {
   SignIn,
   SignUp,
   ForgetPassword,
-  BackToTop,
-  Loader
+  BackToTop
 } from './components';
 import { Home } from './pages';
 
@@ -16,7 +15,6 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Loader />
         <HeaderNavigation />
         <nav id="main-mobile-nav" />
         <div className="wrapper">

@@ -1,17 +1,17 @@
 # ting-movie
 
-> 🎦 Find Movie Showtimes & Buy Tickets.
+🦄 Find Movie Showtimes & Buy Tickets.
 
 ## Install
 
 ```bash
-$ npm i
+$ yarn
 ```
 
 ## Usage
 
 ```bash
-$ npm start
+$ yarn start
 ```
 
 ## License
