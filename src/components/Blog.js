@@ -53,7 +53,7 @@ export default function() {
                     voluptatem accusantium doloremque laudantium, totam rem
                     aperiam, eaque ipsa quae ab illo inventore veritatis...
                   </p>
-                  <a href="#" className="btn btn-main btn-effect">
+                  <a href="https://github.com/cuongw" className="btn btn-main btn-effect">
                     read more
                   </a>
                 </div>
@@ -96,7 +96,7 @@ export default function() {
                     voluptatem accusantium doloremque laudantium, totam rem
                     aperiam, eaque ipsa quae ab illo inventore veritatis...
                   </p>
-                  <a href="#" className="btn btn-main btn-effect">
+                  <a href="https://github.com/cuongw" className="btn btn-main btn-effect">
                     read more
                   </a>
                 </div>
@@ -139,7 +139,7 @@ export default function() {
                     voluptatem accusantium doloremque laudantium, totam rem
                     aperiam, eaque ipsa quae ab illo inventore veritatis...
                   </p>
-                  <a href="#" className="btn btn-main btn-effect">
+                  <a href="https://github.com/cuongw" className="btn btn-main btn-effect">
                     read more
                   </a>
                 </div>

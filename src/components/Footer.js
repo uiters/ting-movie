@@ -37,19 +37,19 @@ export default function() {
                 <h4 className="widget-title">Useful links</h4>
                 <ul className="general-listing">
                   <li>
-                    <a href="#">about TingMovie</a>
+                    <a href="https://github.com/cuongw">about TingMovie</a>
                   </li>
                   <li>
-                    <a href="#">blog</a>
+                    <a href="https://github.com/cuongw">blog</a>
                   </li>
                   <li>
-                    <a href="#">forum</a>
+                    <a href="https://github.com/cuongw">forum</a>
                   </li>
                   <li>
-                    <a href="#">my account</a>
+                    <a href="https://github.com/cuongw">my account</a>
                   </li>
                   <li>
-                    <a href="#">watch list</a>
+                    <a href="https://github.com/cuongw">watch list</a>
                   </li>
                 </ul>
               </div>
@@ -61,16 +61,16 @@ export default function() {
                 <h4 className="widget-title">latest news</h4>
                 <ul className="blog-posts">
                   <li>
-                    <a href="#">blog post 1</a>
-                    <small>januar 13, 2018</small>
+                    <a href="https://github.com/cuongw">blog post 1</a>
+                    <small>januar 13, 2019</small>
                   </li>
                   <li>
-                    <a href="#">blog post 2</a>
-                    <small>januar 13, 2018</small>
+                    <a href="https://github.com/cuongw">blog post 2</a>
+                    <small>januar 13, 2019</small>
                   </li>
                   <li>
-                    <a href="#">blog post 3</a>
-                    <small>januar 13, 2018</small>
+                    <a href="https://github.com/cuongw">blog post 3</a>
+                    <small>januar 13, 2019</small>
                   </li>
                 </ul>
               </div>
@@ -88,7 +88,7 @@ export default function() {
                 <ul className="social-btns">
                   {/* Social Media */}
                   <li>
-                    <a href="#" className="social-btn-roll facebook">
+                    <a href="https://github.com/cuongw" className="social-btn-roll facebook">
                       <div className="social-btn-roll-icons">
                         <i className="social-btn-roll-icon fa fa-facebook" />
                         <i className="social-btn-roll-icon fa fa-facebook" />
@@ -97,7 +97,7 @@ export default function() {
                   </li>
                   {/* Social Media */}
                   <li>
-                    <a href="#" className="social-btn-roll twitter">
+                    <a href="https://github.com/cuongw" className="social-btn-roll twitter">
                       <div className="social-btn-roll-icons">
                         <i className="social-btn-roll-icon fa fa-twitter" />
                         <i className="social-btn-roll-icon fa fa-twitter" />
@@ -106,7 +106,7 @@ export default function() {
                   </li>
                   {/* Social Media */}
                   <li>
-                    <a href="#" className="social-btn-roll google-plus">
+                    <a href="https://github.com/cuongw" className="social-btn-roll google-plus">
                       <div className="social-btn-roll-icons">
                         <i className="social-btn-roll-icon fa fa-google-plus" />
                         <i className="social-btn-roll-icon fa fa-google-plus" />
@@ -115,7 +115,7 @@ export default function() {
                   </li>
                   {/* Social Media */}
                   <li>
-                    <a href="#" className="social-btn-roll instagram">
+                    <a href="https://github.com/cuongw" className="social-btn-roll instagram">
                       <div className="social-btn-roll-icons">
                         <i className="social-btn-roll-icon fa fa-instagram" />
                         <i className="social-btn-roll-icon fa fa-instagram" />
@@ -140,21 +140,21 @@ export default function() {
                 <div className="links">
                   <ul className="list-inline">
                     <li className="list-inline-item">
-                      <a href="#">Privacy &amp; Cookies</a>
+                      <a href="https://github.com/cuongw">Privacy &amp; Cookies</a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">Terms &amp; Conditions</a>
+                      <a href="https://github.com/cuongw">Terms &amp; Conditions</a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">Legal Disclaimer</a>
+                      <a href="https://github.com/cuongw">Legal Disclaimer</a>
                     </li>
                     <li className="list-inline-item">
-                      <a href="#">Community</a>
+                      <a href="https://github.com/cuongw">Community</a>
                     </li>
                   </ul>
                 </div>
                 <div className="copyright ml-auto">
-                  All Rights Reserved by <a href="#">TingMovie</a>.
+                  All Rights Reserved by <a href="https://github.com/cuongw">TingMovie</a>.
                 </div>
               </div>
             </div>
