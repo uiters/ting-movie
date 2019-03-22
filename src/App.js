@@ -9,7 +9,7 @@ import {
   ForgetPassword,
   BackToTop
 } from './components';
-import { Home } from './pages';
+import { Home, NotFound } from './pages';
 
 class App extends Component {
   render() {
@@ -20,11 +20,7 @@ class App extends Component {
         <div className="wrapper">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path='/showtimes' render={() => <h1 className='text-danger'>Showtimes</h1>} />
-            <Route path='/movies' render={() => <h1 className='text-success'>Movies</h1>} />
-            <Route path='/blog' render={() => <h1 className='text-warning'>Blog</h1>} />
-            <Route path='/contact' render={() => <h1 className='text-primary'>Contact us</h1>} />
-            <Route path='*' render={() => <h1>Not Found</h1>} />
+            <Route path='*' component={NotFound} />
           </Switch>
           <Footer />
         </div>
