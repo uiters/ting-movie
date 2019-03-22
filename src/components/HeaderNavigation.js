@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function() {
   return (
@@ -6,10 +7,10 @@ export default function() {
       <div className="container-fluid">
         {/* ====== Start of Navbar ====== */}
         <nav className="navbar navbar-expand-lg">
-          <a
+          <Link
             className="navbar-brand"
-            href="index.html"
             style={{ paddingRight: 190 }}
+            to='/'
           >
             <img
               src="../../images/logo-white.svg"
@@ -29,7 +30,7 @@ export default function() {
             >
               TingMovie
             </span>
-          </a>
+          </Link>
           <button
             id="mobile-nav-toggler"
             className="hamburger hamburger--collapse"
@@ -45,33 +46,33 @@ export default function() {
             <ul className="navbar-nav mx-auto" id="main-menu">
               {/* Menu Item */}
               <li className="nav-item">
-                <a className="nav-link" href="https://github.com/cuongw">
+                <Link className="nav-link" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               {/* Menu Item */}
               <li className="nav-item">
-                <a className="nav-link" href="https://github.com/cuongw">
+                <Link className="nav-link" to="/showtimes">
                   Showtimes
-                </a>
+                </Link>
               </li>
               {/* Menu Item */}
               <li className="nav-item">
-                <a className="nav-link" href="https://github.com/cuongw">
+                <Link className="nav-link" to="/movies">
                   Movies
-                </a>
+                </Link>
               </li>
               {/* Menu Item */}
               <li className="nav-item">
-                <a className="nav-link" href="https://github.com/cuongw">
+                <Link className="nav-link" to='/blog'>
                   Blog
-                </a>
+                </Link>
               </li>
               {/* Menu Item */}
               <li className="nav-item">
-                <a className="nav-link" href="templates/movify/contact-us.html">
+                <Link className="nav-link" to='/contact'>
                   Contact us
-                </a>
+                </Link>
               </li>
             </ul>
             {/* ====== End of Main Menu ====== */}

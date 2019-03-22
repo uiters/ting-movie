@@ -35,7 +35,7 @@ export default function() {
                     </li>
                     {/* List Item */}
                     <li>
-                      <h6>Unlimited Movies and TV shows</h6>
+                      <h6>Unlimited Movies</h6>
                     </li>
                     {/* List Item */}
                     <li>
