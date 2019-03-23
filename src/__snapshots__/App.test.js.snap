@@ -2,7 +2,6 @@
 
 exports[`App should render correctly in "debug" mode 1`] = `
 <BrowserRouter>
-  <_default />
   <nav
     id="main-mobile-nav"
   />
