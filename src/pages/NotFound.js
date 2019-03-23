@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import { Loader, SearchForm } from '../components';
-import '../styles/NotFound.css'
+import { loadPackage } from '../utils';
+import { Loader, HeaderNavigation, SearchForm, MainHeader } from '../components';
 
 export default class extends Component {
+  componentWillMount() {
+    loadPackage();
+  }
   render() {
     return (
       <div>
         <Loader />
-        <section
-          className="page-header overlay-gradient"
-        />
+        <HeaderNavigation isWhite={true} />
+        <MainHeader content='404 Page' />
         <main className="page-not-found ptb100">
           <div className="container">
             <div className="row">

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "classnames": "^2.2.6",
     "jquery": "^3.3.1",
     "loadjs": "^3.6.0",
     "prop-types": "^15.7.2",
@@ -30,7 +31,9 @@
     "not op_mini all"
   ],
   "jest": {
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "devDependencies": {
     "enzyme": "^3.9.0",

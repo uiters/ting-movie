@@ -1,31 +1,36 @@
 import React from 'react';
+import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
-export default function() {
+function HeaderNavigation({ isWhite }) {
+  const headerClass = classNames({
+    header: true,
+    'header-fixed header-transparent text-white': !isWhite
+  });
   return (
-    <header className="header header-fixed header-transparent text-white">
+    <header className={headerClass}>
       <div className="container-fluid">
         {/* ====== Start of Navbar ====== */}
         <nav className="navbar navbar-expand-lg">
-          <Link
-            className="navbar-brand"
-            style={{ paddingRight: 190 }}
-            to='/'
-          >
+          <Link className="navbar-brand" style={{ paddingRight: 190 }} to="/">
             <img
-              src="../../images/logo-white.svg"
-              alt="white logo"
-              className="logo-white d-inline-block"
+              src={
+                !isWhite
+                  ? `${process.env.PUBLIC_URL}/images/logo-white.svg`
+                  : `${process.env.PUBLIC_URL}/images/logo.svg`
+              }
+              alt="TingMovie logo"
+              className="d-inline-block"
               width={36}
             />
             <span
               style={{
-                fontSize: 35,
+                fontSize: 33,
                 fontWeight: 500,
-                color: 'white',
+                color: !isWhite ? 'white' : '#993c7f',
                 position: 'absolute',
                 left: 60,
-                top: 10
+                top: 5
               }}
             >
               TingMovie
@@ -64,13 +69,13 @@ export default function() {
               </li>
               {/* Menu Item */}
               <li className="nav-item">
-                <Link className="nav-link" to='/blog'>
+                <Link className="nav-link" to="/blog">
                   Blog
                 </Link>
               </li>
               {/* Menu Item */}
               <li className="nav-item">
-                <Link className="nav-link" to='/contact'>
+                <Link className="nav-link" to="/contact">
                   Contact us
                 </Link>
               </li>
@@ -117,3 +122,9 @@ export default function() {
     </header>
   );
 }
+
+HeaderNavigation.defaultProps = {
+  isWhite: false
+};
+
+export default HeaderNavigation;

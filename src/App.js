@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import {
-  HeaderNavigation,
   Footer,
   HeaderSearch,
   SignIn,
@@ -15,7 +14,6 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <HeaderNavigation />
         <nav id="main-mobile-nav" />
         <div className="wrapper">
           <Switch>
