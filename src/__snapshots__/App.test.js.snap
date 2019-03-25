@@ -16,6 +16,10 @@ exports[`App should render correctly in "debug" mode 1`] = `
       />
       <Route
         component={[Function]}
+        path="/movies"
+      />
+      <Route
+        component={[Function]}
         path="*"
       />
     </Switch>

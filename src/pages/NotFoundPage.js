@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { loadPackage } from '../utils';
+import { loadPackages } from '../utils';
 import { Loader, HeaderNavigation, SearchForm, MainHeader } from '../components';
 
 export default class extends Component {
   componentWillMount() {
-    loadPackage();
+    loadPackages();
   }
   render() {
     return (
