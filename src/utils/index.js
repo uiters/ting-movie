@@ -1,1 +1,1 @@
-export { default as loadPackage } from './loadPackage';
+export { default as loadPackages } from './loadPackages';

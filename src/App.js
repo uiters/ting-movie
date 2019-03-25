@@ -8,7 +8,7 @@ import {
   ForgetPassword,
   BackToTop
 } from './components';
-import { Home, NotFound } from './pages';
+import { HomePage, MoviesPage, NotFoundPage } from './pages';
 
 class App extends Component {
   render() {
@@ -17,8 +17,9 @@ class App extends Component {
         <nav id="main-mobile-nav" />
         <div className="wrapper">
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path='*' component={NotFound} />
+            <Route exact path="/" component={HomePage} />
+            <Route path='/movies' component={MoviesPage} />
+            <Route path='*' component={NotFoundPage} />
           </Switch>
           <Footer />
         </div>
