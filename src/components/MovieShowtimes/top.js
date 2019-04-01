@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Schedual from './schedual'
+import './../../styles/schedualPage.css'
 export default class extends Component {
 
   render() {
@@ -29,17 +30,17 @@ export default class extends Component {
 
               <div className="card-body">
                 <span className="detailMainInfo1 ng-binding">22.03.2019</span>
-               <h4 className="card-title">
-                   <span className="detailMainInfo2">
+                <h4 className="card-title">
+                  <span className="detailMainInfo2">
 
                     <span className="ageType ng-binding ng-scope" ng-if="filmDetail.film_age >= 13">C18</span>
 
                     <span className="ng-binding"> Us - Chúng Ta </span>
                   </span>
-                  </h4>
-                   <p class="card-text">
+                </h4>
+                <p class="card-text">
                   <span class="detailMainInfo1 ng-binding">0 phút - 0 IMDb - 2D/Digital</span></p>
-                  <button alt="true" type="button" className="btn btn-primary " data-toggle="modal" data-target="#myModal">
+                <button alt="true" type="button" className="btn btn-primary " data-toggle="modal" data-target="#myModal">
                   Xem lịch chiếu
                  </button>
               </div>

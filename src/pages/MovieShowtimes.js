@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Loader, HeaderNavigation, MainHeader } from '../components';
 import { Top, InfoFilm } from '../components'
-
+import './../styles/schedualPage.css'
 export default class extends Component {
   render() {
     return (

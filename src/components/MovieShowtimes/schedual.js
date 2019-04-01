@@ -120,7 +120,7 @@ export default class extends Component {
                             <dd className="tab-container current">
 
                               <div className="product-collateral toggle-content tabs tabs-cgv-movie-type">
-                                     {/* Start Show Theater Type*/}
+                                {/* Start Show Theater Type*/}
                                 <ul className="toggle-tabs">
                                   <li className="last current">
                                     <span>2D Phụ Đề Việt</span>
@@ -133,8 +133,8 @@ export default class extends Component {
                                   <dd className="tab-container last current">
 
                                     <div className="tab-content showtimes">
-                                    
-                                     {/* Start Show Info Of Threater 1 */}
+
+                                      {/* Start Show Info Of Threater 1 */}
                                       <div className="site sitecgv">
                                         <div className="site"><h3>CGV Pearl Plaza</h3></div>
                                         <div className="cinema 2d"><h4>Rạp 2D</h4></div>
@@ -159,7 +159,7 @@ export default class extends Component {
 
                                           </li>
                                         </ul>
-                                          {/* Finish Show Time  Movie */}
+                                        {/* Finish Show Time  Movie */}
                                       </div>
                                       {/* Finish Show Info Of Threater 1 */}
 
@@ -202,7 +202,7 @@ export default class extends Component {
                                       </div>
                                       {/* Finish Show Info Of Threater 2 */}
 
-                                     {/* Start Show Info Of Threater 3 */}
+                                      {/* Start Show Info Of Threater 3 */}
                                       <div className="site sitecgv">
                                         <div className="site"><h3>CGV Sư Vạn Hạnh</h3></div>
                                         <div className="cinema 2d"><h4>Rạp 2D</h4></div>
@@ -239,13 +239,13 @@ export default class extends Component {
                                           </li>
                                         </ul>
                                       </div>
-                                    {/* Finish Show Info Of Threater 3 */}
+                                      {/* Finish Show Info Of Threater 3 */}
                                     </div>
 
                                   </dd>
 
                                 </dl>
-                               {/* Start Show InFo Of Theater */}
+                                {/* Start Show InFo Of Theater */}
                               </div>
 
                             </dd>
