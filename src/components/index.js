@@ -1,4 +1,4 @@
 export * from './common';
 export * from './homePage';
 export * from './moviesPage';
-export * from './MovieShowtimes';
+export * from './showtimesPage';
