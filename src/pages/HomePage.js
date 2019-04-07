@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { loadPackages } from '../utils';
 import {
   HeaderNavigation,
@@ -14,11 +15,21 @@ import {
   Subscribe
 } from '../components';
 
-export default class extends Component {
+class HomePage extends Component {
   componentWillMount() {
     loadPackages();
   }
+
+  componentDidMount() {
+    this.props.onFetchMovies();
+  }
+  
+  componentWillUpdate() {
+    loadPackages();
+  }
+
   render() {
+    const { isFetching, isError, movies } = this.props;
     return (
       <div>
         <Loader />
@@ -27,7 +38,11 @@ export default class extends Component {
           <Slider />
           <SearchForm />
         </section>
-        <LatestMovies />
+        <LatestMovies
+          isFetching={isFetching}
+          isError={isError}
+          movies={movies}
+        />
         <UpcomingMovies />
         <HowItWorks />
         <Counter />
@@ -38,3 +53,12 @@ export default class extends Component {
     );
   }
 }
+
+HomePage.propTypes = {
+  isFetching: PropTypes.bool,
+  isError: PropTypes.bool,
+  movies: PropTypes.array,
+  onFetchMovies: PropTypes.func
+};
+
+export default HomePage;

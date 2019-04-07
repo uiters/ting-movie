@@ -8,7 +8,8 @@ import {
   ForgetPassword,
   BackToTop
 } from './components';
-import { HomePage, MoviesPage, NotFoundPage, ContactPage } from './pages';
+import { NotFoundPage, ContactPage } from './pages';
+import { HomePageContainer, MoviesPageContainer } from './containers';
 
 class App extends Component {
   render() {
@@ -17,10 +18,10 @@ class App extends Component {
         <nav id="main-mobile-nav" />
         <div className="wrapper">
           <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route path='/movies' component={MoviesPage} />
-            <Route path='/contact' component={ContactPage} />
-            <Route path='*' component={NotFoundPage} />
+            <Route exact path="/" component={HomePageContainer} />
+            <Route path="/movies" component={MoviesPageContainer} />
+            <Route path="/contact" component={ContactPage} />
+            <Route path="*" component={NotFoundPage} />
           </Switch>
           <Footer />
         </div>

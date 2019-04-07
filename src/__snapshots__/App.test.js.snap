@@ -20,6 +20,10 @@ exports[`App should render correctly in "debug" mode 1`] = `
       />
       <Route
         component={[Function]}
+        path="/contact"
+      />
+      <Route
+        component={[Function]}
         path="*"
       />
     </Switch>

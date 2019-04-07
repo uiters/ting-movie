@@ -79,7 +79,7 @@ export default class extends Component {
                       className="form-control input-box"
                       type="email"
                       name="email"
-                      placeholder="your-email@movify.com"
+                      placeholder="your-email@tingmovie.com"
                       autoComplete="off"
                     />
                   </div>

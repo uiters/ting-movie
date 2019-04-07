@@ -1,8 +1,22 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import { ClipLoader } from 'react-spinners';
 import { MovieGridItem } from '../../components';
 
-export default function() {
+function LatestMovies({ isFetching, isError, movies }) {
+  const listMovies =  movies.slice(0, 12).map((movie, index) =>
+    <MovieGridItem key={index} isColumn={false} movie={movie} />
+  );
+
+  const data = isFetching
+  ? 
+  <ClipLoader sizeUnit={'px'} size={40} color={'#9c3064'} />
+  : (isError 
+    ? <h5 className="title" style={{color: '#9c3064'}}>Nothing to display</h5>
+    : <div className='owl-carousel latest-movies-slider mt20'>{listMovies}</div>
+    );
+
   return (
     <section className="latest-movies ptb100">
       <div className="container">
@@ -12,28 +26,25 @@ export default function() {
             <h2 className="title">Latest Movies</h2>
           </div>
           <div className="col-md-4 align-self-center text-right">
-            <a href="#" className="btn btn-icon btn-main btn-effect">
+            <Link to="/movies" className="btn btn-icon btn-main btn-effect">
               view all
               <i className="ti-angle-double-right" />
-            </a>
+            </Link>
           </div>
         </div>
         {/* End of row */}
         {/* Start of Latest Movies Slider */}
-        <div className="owl-carousel latest-movies-slider mt20">
-          <MovieGridItem isColumn={false} />
-          <MovieGridItem isColumn={false} />
-          <MovieGridItem isColumn={false} />
-          <MovieGridItem isColumn={false} />
-          <MovieGridItem isColumn={false} />
-          <MovieGridItem isColumn={false} />
-          <MovieGridItem isColumn={false} />
-          <MovieGridItem isColumn={false} />
-          <MovieGridItem isColumn={false} />
-          <MovieGridItem isColumn={false} />
-        </div>
+        {data}
         {/* End of Latest Movies Slider */}
       </div>
     </section>
   );
 }
+
+LatestMovies.propTypes = {
+  isFetching: PropTypes.bool,
+  isError: PropTypes.bool,
+  movies: PropTypes.array
+};
+
+export default LatestMovies;
