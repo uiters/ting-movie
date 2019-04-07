@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ScaleLoader } from 'react-spinners';
 import { loadPackages } from '../utils';
 import {
   HeaderNavigation,
@@ -19,10 +18,18 @@ import {
 class HomePage extends Component {
   componentWillMount() {
     loadPackages();
+  }
+
+  componentDidMount() {
     this.props.onFetchMovies();
+  }
+  
+  componentWillUpdate() {
+    loadPackages();
   }
 
   render() {
+    const { isFetching, isError, movies } = this.props;
     return (
       <div>
         <Loader />
@@ -31,11 +38,11 @@ class HomePage extends Component {
           <Slider />
           <SearchForm />
         </section>
-        {this.props.isFetching ? (
-          <ScaleLoader sizeUnit={'px'} size={150} color={'#123abc'} />
-        ) : (
-          <LatestMovies />
-        )}
+        <LatestMovies
+          isFetching={isFetching}
+          isError={isError}
+          movies={movies}
+        />
         <UpcomingMovies />
         <HowItWorks />
         <Counter />

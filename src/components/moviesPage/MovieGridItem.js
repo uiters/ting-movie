@@ -1,12 +1,27 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
-function MovieGridItem({ isColumn }) {
+function MovieGridItem({ isColumn, movie }) {
   const containerClassName = classNames({
     'item': true,
     'col-lg-3 col-md-6 col-sm-12 mt-4': isColumn
   });
+
+  const renderStars = () => {
+    const totalStars = Math.floor(movie.imdb_point / 2);
+    const starsItems = [];
+    
+    for (let i = 0; i < totalStars; i++) {
+      starsItems.push(<i className="fa fa-star" />);
+    }
+    for (let i = 0; i < 5 - totalStars; i++) {
+      starsItems.push(<i className="fa fa-star-o" />);
+    }
+
+    return <div className="rating">{starsItems}</div>;
+  };
+
   return (
     <div className={containerClassName}>
       {/* Start of Movie Box */}
@@ -14,15 +29,15 @@ function MovieGridItem({ isColumn }) {
         {/* Start of Poster */}
         <div className="poster">
           <img
-            src="https://i.pinimg.com/736x/9c/7a/40/9c7a408a8ffa8d2c2949aca17b1cc207.jpg"
-            alt="poster"
+            src={movie.poster_url}
+            alt={movie.film_name}
           />
         </div>
         {/* End of Poster */}
         {/* Start of Buttons */}
         <div className="buttons">
           <a
-            href="https://www.youtube.com/watch?v=VSB4wGIdDwo"
+            href={`https://www.youtube.com/watch?v=${movie.media_id}`}
             className="play-video"
           >
             <i className="fa fa-play" />
@@ -32,21 +47,15 @@ function MovieGridItem({ isColumn }) {
         {/* Start of Movie Details */}
         <div className="movie-details">
           <h4 className="movie-title">
-            <a href="https://github.com/cuongw">Star Wars</a>
+            <a href="https://github.com/cuongw">{movie.film_name}</a>
           </h4>
-          <span className="released">14 Dec 2017</span>
+          <span className="released">{movie.publish_date}</span>
         </div>
         {/* End of Movie Details */}
         {/* Start of Rating */}
         <div className="stars">
-          <div className="rating">
-            <i className="fa fa-star" />
-            <i className="fa fa-star" />
-            <i className="fa fa-star" />
-            <i className="fa fa-star" />
-            <i className="fa fa-star-o" />
-          </div>
-          <span>7.5 / 10</span>
+          {renderStars()}
+          <span>{movie.imdb_point} / 10</span>
         </div>
         {/* End of Rating */}
       </div>
@@ -57,6 +66,11 @@ function MovieGridItem({ isColumn }) {
 
 MovieGridItem.defaultProps = {
   isColumn: true
+};
+
+MovieGridItem.propTypes = {
+  isColumn: PropTypes.bool,
+  movie: PropTypes.object
 };
 
 export default MovieGridItem;

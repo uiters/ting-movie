@@ -41,5 +41,6 @@
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
     "enzyme-to-json": "^3.3.5"
-  }
+  },
+  "proxy": "https://www.123phim.vn"
 }

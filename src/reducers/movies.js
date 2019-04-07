@@ -18,7 +18,7 @@ const movies = (state = initialState, action) => {
     case types.RECEIVE_MOVIES:
       return {
         ...state,
-        movies: action.movies,
+        movies: [...action.payload],
         isFetching: false,
         isError: false
       };

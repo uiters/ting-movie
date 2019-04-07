@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { ClipLoader } from 'react-spinners';
 import { loadPackages } from '../utils';
 import {
   Loader,
@@ -10,10 +12,37 @@ import {
   Pagination
 } from '../components';
 
-export default class extends Component {
+class MoviesPage extends Component {
   componentWillMount() {
     loadPackages();
   }
+
+  componentDidMount() {
+    this.props.onFetchMovies();
+  }
+
+  componentWillUpdate() {
+    loadPackages();
+  }
+
+  renderMoviesList() {
+    const { isFetching, isError, movies } = this.props;
+
+    const listMovies =  movies.map((movie, index) =>
+      <MovieGridItem key={index} movie={movie} />
+    );
+
+    const data = isFetching
+    ? 
+    <ClipLoader sizeUnit={'px'} size={40} color={'#9c3064'} />
+    : (isError 
+      ? <h5 className="title" style={{color: '#9c3064'}}>Nothing to display</h5>
+      : listMovies
+      );
+
+    return data;
+  }
+
   render() {
     return (
       <div>
@@ -44,12 +73,7 @@ export default class extends Component {
               </li>
             </ul>
             <div className="row">
-              <MovieGridItem />
-              <MovieGridItem />
-              <MovieGridItem />
-              <MovieGridItem />
-              <MovieGridItem />
-              <MovieGridItem />
+              {this.renderMoviesList()}
             </div>
             <Pagination />
           </div>
@@ -58,3 +82,12 @@ export default class extends Component {
     );
   }
 }
+
+MoviesPage.propTypes = {
+  isFetching: PropTypes.bool,
+  isError: PropTypes.bool,
+  movies: PropTypes.array,
+  onFetchMovies: PropTypes.func
+};
+
+export default MoviesPage;
