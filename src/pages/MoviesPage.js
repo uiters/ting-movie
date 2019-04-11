@@ -13,34 +13,79 @@ import {
 } from '../components';
 
 class MoviesPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      page: 1
+    };
+  }
+
   componentWillMount() {
     loadPackages();
+    this.getPage();
   }
 
   componentDidMount() {
     this.props.onFetchMovies();
+    this.getPage();
   }
 
   componentWillUpdate() {
     loadPackages();
   }
 
-  renderMoviesList() {
-    const { isFetching, isError, movies } = this.props;
+  componentWillReceiveProps(nextProps) {
+    const params = new URLSearchParams(nextProps.location.search);
+    this.setState({ page: parseInt(params.get('page')) || 1 });
+  }
 
-    const listMovies =  movies.map((movie, index) =>
-      <MovieGridItem key={index} movie={movie} />
+  getPage() {
+    const params = new URLSearchParams(this.props.location.search);
+    this.setState({ page: parseInt(params.get('page')) || 1 });
+  }
+
+  renderMovies() {
+    const { page = 1 } = this.state;
+    const { movies } = this.props;
+
+    const perPage = 12;
+    const start = (page - 1) * perPage;
+    const end = start + perPage;
+
+    return [...movies]
+      .slice(start, end)
+      .map((movie, index) => <MovieGridItem key={index} movie={movie} />);
+  }
+
+  renderData() {
+    const { isFetching, isError } = this.props;
+
+    const movieList = this.renderMovies();
+
+    const data = isFetching ? (
+      <ClipLoader sizeUnit={'px'} size={40} color={'#9c3064'} />
+    ) : isError ? (
+      <h5 className="title" style={{ color: '#9c3064' }}>
+        Nothing to display
+      </h5>
+    ) : (
+      movieList
     );
 
-    const data = isFetching
-    ? 
-    <ClipLoader sizeUnit={'px'} size={40} color={'#9c3064'} />
-    : (isError 
-      ? <h5 className="title" style={{color: '#9c3064'}}>Nothing to display</h5>
-      : listMovies
-      );
-
     return data;
+  }
+
+  renderPagination() {
+    const { isFetching, isError } = this.props;
+    if (!isFetching && !isError) {
+      return (
+        <Pagination
+          movieCount={this.props.movies.length || 0}
+          perPage={12}
+          currentPage={this.state.page || 1}
+        />
+      );
+    }
   }
 
   render() {
@@ -72,10 +117,9 @@ class MoviesPage extends Component {
                 </a>
               </li>
             </ul>
-            <div className="row">
-              {this.renderMoviesList()}
-            </div>
-            <Pagination />
+            {this.renderPagination()}
+            <div className="row">{this.renderData()}</div>
+            {this.renderPagination()}
           </div>
         </div>
       </div>
@@ -84,6 +128,7 @@ class MoviesPage extends Component {
 }
 
 MoviesPage.propTypes = {
+  location: PropTypes.object,
   isFetching: PropTypes.bool,
   isError: PropTypes.bool,
   movies: PropTypes.array,

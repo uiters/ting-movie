@@ -3,7 +3,7 @@ import axios from 'axios';
 export const fetchMovies = () => {
   const params = {
     param: {
-      url: '/film/list?status=2',
+      url: '/film/list',
       keyCache: 'showing-film'
     },
     method: 'GET'
