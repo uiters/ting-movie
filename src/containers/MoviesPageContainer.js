@@ -5,7 +5,14 @@ import { fetchMoviesAsync } from '../actions/movies';
 const mapStateToProps = state => ({
   isFetching: state.movies.isFetching,
   isError: state.movies.isError,
-  movies: state.movies.movies
+  movies: [
+    ...state.movies.movies,
+    ...state.movies.movies,
+    ...state.movies.movies,
+    ...state.movies.movies,
+    ...state.movies.movies,
+    ...state.movies.movies
+  ]
 });
 
 const mapDispatchToProps = (dispatch, props) => ({

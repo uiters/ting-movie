@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
+import nanoid from 'nanoid';
 
 function MovieGridItem({ isColumn, movie }) {
   const containerClassName = classNames({
@@ -13,10 +14,10 @@ function MovieGridItem({ isColumn, movie }) {
     const starsItems = [];
     
     for (let i = 0; i < totalStars; i++) {
-      starsItems.push(<i className="fa fa-star" />);
+      starsItems.push(<i key={nanoid()} className="fa fa-star" />);
     }
     for (let i = 0; i < 5 - totalStars; i++) {
-      starsItems.push(<i className="fa fa-star-o" />);
+      starsItems.push(<i key={nanoid()} className="fa fa-star-o" />);
     }
 
     return <div className="rating">{starsItems}</div>;

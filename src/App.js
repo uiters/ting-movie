@@ -21,7 +21,7 @@ class App extends Component {
             <Route exact path="/" component={HomePageContainer} />
             <Route path="/movies" component={MoviesPageContainer} />
             <Route path="/contact" component={ContactPage} />
-            <Route path="*" component={NotFoundPage} />
+            <Route component={NotFoundPage} />
           </Switch>
           <Footer />
         </div>
