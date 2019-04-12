@@ -1,28 +1,57 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import { loadPackages } from '../utils';
 import { Loader, HeaderNavigation, MainHeader } from '../components';
-import { Top, MovieInformation } from '../components';
-import './../styles/showtimes.css';
+import { MovieMainInfo, MovieShowtimes } from '../components';
 export default class extends Component {
   componentWillMount() {
     loadPackages();
   }
-  
+
   render() {
     return (
       <div>
         <Loader />
         <HeaderNavigation isWhite={true} />
         <MainHeader content="ShowTimes" />
-        <main alt="true">
-          {/* Start Body Of Page */}
-          <section className="bg-solid ">
-            <div className="container bg-solid">
-              <Top />
-              <MovieInformation />
+        <main className="ptb100">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12">
+                <MovieMainInfo />
+                <ul className="nav justify-content-center my-5">
+                  <li className="nav-item">
+                    <a
+                      className="nav-link text-danger font-weight-bold"
+                      href="#"
+                      style={{ fontSize: '24px' }}
+                    >
+                      ShowTimes
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a
+                      className="nav-link text-secondary"
+                      href="#"
+                      style={{ fontSize: '24px' }}
+                    >
+                      Informations
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a
+                      className="nav-link text-secondary"
+                      href="#"
+                      style={{ fontSize: '24px' }}
+                    >
+                      Rating & Reviews
+                    </a>
+                  </li>
+                </ul>
+                <MovieShowtimes />
+              </div>
             </div>
-          </section>
-          {/* Finish Body Of Page */}
+          </div>
         </main>
       </div>
     );

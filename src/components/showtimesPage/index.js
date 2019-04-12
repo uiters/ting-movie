@@ -1,3 +1,2 @@
-export { default as Top } from './Top';
-export { default as MovieInformation } from './MovieInformation';
-export { default as Schedual } from './Schedual';
+export { default as MovieMainInfo } from './MovieMainInfo';
+export { default as MovieShowtimes } from './MovieShowtimes';
