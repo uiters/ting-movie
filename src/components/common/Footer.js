@@ -23,33 +23,34 @@ export default function() {
                   className="logo-white"
                 />
                 <p className="nomargin">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Itaque, ducimus, atque. Praesentium suscipit provident
-                  explicabo dignissimos nostrum numquam deserunt earum
-                  accusantium et fugit.
+                SẢN PHẨM CỦA CÔNG TY TNHH MTV TING - DỊCH VỤ XUYÊN QUỐC GIA TING
                 </p>
+                <img className="mt-3"
+                  src="https://s3img.vcdn.vn/123phim/2018/09/9693e0dbb6ceb3b274afeb6aa09a911f.png"
+                  style={{height: "50px"}}
+                />
               </div>
             </div>
             {/* End of Widget 1 */}
             {/* Start of Widget 2 */}
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="widget widget-links">
-                <h4 className="widget-title">Useful links</h4>
+                <h4 className="widget-title">Ting Move</h4>
                 <ul className="general-listing">
                   <li>
-                    <a href="https://github.com/cuongw">about TingMovie</a>
+                    <a href="https://github.com/cuongw">Về TingMovie</a>
                   </li>
                   <li>
-                    <a href="https://github.com/cuongw">blog</a>
+                    <a href="https://github.com/tvc12">Tin tức</a>
                   </li>
                   <li>
-                    <a href="https://github.com/cuongw">forum</a>
+                    <a href="https://github.com/cuongw">Diễn đàn</a>
                   </li>
                   <li>
-                    <a href="https://github.com/cuongw">my account</a>
+                    <a href="https://github.com/cuongw">Tài khoản</a>
                   </li>
                   <li>
-                    <a href="https://github.com/cuongw">watch list</a>
+                    <a href="https://github.com/tvc12">Danh sách xem</a>
                   </li>
                 </ul>
               </div>
@@ -58,7 +59,7 @@ export default function() {
             {/* Start of Widget 3 */}
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="widget widget-blog">
-                <h4 className="widget-title">latest news</h4>
+                <h4 className="widget-title">Tin Tức Mới Nhất</h4>
                 <ul className="blog-posts">
                   <li>
                     <a href="https://github.com/cuongw">blog post 1</a>
@@ -79,10 +80,9 @@ export default function() {
             {/* Start of Widget 4 */}
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="widget widget-social">
-                <h4 className="widget-title">follow us</h4>
+                <h4 className="widget-title">Theo dõi chúng tôi</h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Itaque, ducimus, atque.
+                  Theo dõi để nhận các tin tức mới nhất từ TingMovie
                 </p>
                 {/* Start of Social Buttons */}
                 <ul className="social-btns">

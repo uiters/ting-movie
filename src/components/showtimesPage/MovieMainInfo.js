@@ -36,7 +36,7 @@ export default function() {
         <a href="#" className="btn btn-main btn-effect text-center" style={{lineHeight: '45px', width: '160px'}}>
           <span>
             <i className="icon-basket" style={{ marginRight: '10px', fontSize: '15px' }} />
-            Get Tickets
+            Mua vé
           </span>
         </a>
       </div>

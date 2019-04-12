@@ -14,7 +14,7 @@ export default function() {
           <li data-transition="fade">
             {/* MAIN IMAGE */}
             <img
-              src="../../images/slider/slider1.jpg"
+              src="https://www.cgv.vn/media/wysiwyg/2019/APR19/LATMAT4_Popup.jpg"
               alt="slider 1"
               title="slider-bg"
               data-bgposition="center center"
@@ -40,9 +40,7 @@ export default function() {
                 color: '#fff',
                 fontWeight: 900
               }}
-            >
-              START STREAMING NOW
-            </div>
+            />
           </li>
           {/* ===== SLIDE NR. 2 ===== */}
           <li
@@ -54,7 +52,7 @@ export default function() {
           >
             {/* MAIN IMAGE */}
             <img
-              src="../../images/slider/slider2.jpg"
+              src="https://s3img.vcdn.vn/123phim/2019/03/dai-uy-marvel-15514145585840.jpg"
               alt="slider 2"
               title="slider-bg"
               data-bgposition="center top"
@@ -76,9 +74,7 @@ export default function() {
               data-whitespace="nowrap"
               data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
               style={{ zIndex: 5, color: '#fff', fontWeight: 900 }}
-            >
-              ULTRA HD RESOLUTION
-            </div>
+            />
           </li>
           {/* ===== SLIDE NR. 3 ===== */}
           <li
@@ -90,7 +86,7 @@ export default function() {
           >
             {/* MAIN IMAGE */}
             <img
-              src="../../images/slider/slider3.jpg"
+              src="https://s3img.vcdn.vn/123phim/2019/02/hai-phuong-sneakshow-15508021265617.jpg"
               alt="slider 3"
               data-bgposition="center top"
               data-bgfit="cover"
@@ -111,9 +107,7 @@ export default function() {
               data-whitespace="nowrap"
               data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
               style={{ zIndex: 5, color: '#fff', fontWeight: 900 }}
-            >
-              LATEST MOVIES &amp; SERIES
-            </div>
+            />
           </li>
         </ul>
       </div>

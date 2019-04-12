@@ -5,30 +5,30 @@ export default function() {
   return (
     <div className="signin-wrapper">
       <div className="small-dialog-headline">
-        <h4 className="text-center">Sign in</h4>
+        <h4 className="text-center">Đăng nhập</h4>
       </div>
       <div className="small-dialog-content">
         {/* Start of Login form */}
         <form id="cariera_login" method="post">
           <p className="status" />
           <div className="form-group">
-            <label htmlFor="username">Username or Email *</label>
+            <label htmlFor="username">Tên đăng nhập hoặc Email *</label>
             <input
               type="text"
               className="form-control"
               id="username"
               name="username"
-              placeholder="Your Username or Email *"
+              placeholder="Tên đăng nhập hoặc Email *"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password *</label>
+            <label htmlFor="password">Mật khẩu *</label>
             <input
               type="password"
               className="form-control"
               id="password"
               name="password"
-              placeholder="Your Password *"
+              placeholder="Mật khẩu *"
             />
           </div>
           <div className="form-group">
@@ -39,7 +39,7 @@ export default function() {
                 name="remember"
                 defaultValue="yes"
               />
-              <label htmlFor="check1">Keep me signed in</label>
+              <label htmlFor="check1">Nhớ tên đăng nhập</label>
             </div>
           </div>
           <div className="form-group">
@@ -53,10 +53,10 @@ export default function() {
         {/* End of Login form */}
         <div className="bottom-links">
           <span>
-            Not a member?
-            <a className="signUpClick">Sign up</a>
+            Không phải thành viên?
+            <a className="signUpClick"> Đăng ký</a>
           </span>
-          <a className="forgetPasswordClick pull-right">Forgot Password</a>
+          <a className="forgetPasswordClick pull-right">Quên mật khẩu</a>
         </div>
       </div>
     </div>

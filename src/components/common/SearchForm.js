@@ -14,7 +14,7 @@ export default function() {
                   type="text"
                   id="search-keyword"
                   className="form-control"
-                  placeholder="Enter Movies or Series Title"
+                  placeholder="Nhập tên phim"
                 />
                 <button type="submit" className="btn btn-main btn-effect">
                   <i className="fa fa-search" />

@@ -52,31 +52,31 @@ function HeaderNavigation({ isWhite }) {
               {/* Menu Item */}
               <li className="nav-item">
                 <Link className="nav-link" to="/">
-                  Home
+                  Trang Chủ
                 </Link>
               </li>
               {/* Menu Item */}
               <li className="nav-item">
                 <Link className="nav-link" to="/showtimes">
-                  Showtimes
+                  Lịch Chiếu
                 </Link>
               </li>
               {/* Menu Item */}
               <li className="nav-item">
                 <Link className="nav-link" to="/movies">
-                  Movies
+                  Phim
                 </Link>
               </li>
               {/* Menu Item */}
               <li className="nav-item">
                 <Link className="nav-link" to="/blog">
-                  Blog
+                  Tin Tức
                 </Link>
               </li>
               {/* Menu Item */}
               <li className="nav-item">
                 <Link className="nav-link" to="/contact">
-                  Contact us
+                  Liên Hệ
                 </Link>
               </li>
             </ul>
@@ -109,7 +109,7 @@ function HeaderNavigation({ isWhite }) {
                   className="btn btn-main btn-effect login-btn popup-with-zoom-anim"
                 >
                   <i className="icon-user" />
-                  login
+                  Đăng nhập
                 </a>
               </li>
             </ul>

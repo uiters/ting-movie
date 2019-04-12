@@ -7,24 +7,24 @@ export default function() {
         <div className="row">
           {/* 1st Count up item */}
           <div className="col-md-4 col-sm-12">
-            <span className="counter-item" data-from={0} data-to={1964}>
+            <span className="counter-item" data-from={0} data-to={8910}>
               0
             </span>
-            <h4>Movies</h4>
+            <h4>Phim</h4>
           </div>
           {/* 2nd Count up item */}
           <div className="col-md-4 col-sm-12">
-            <span className="counter-item" data-from={0} data-to={1007}>
+            <span className="counter-item" data-from={0} data-to={30501}>
               0
             </span>
-            <h4>Everyday Access</h4>
+            <h4>Lượng truy cập</h4>
           </div>
           {/* 3rd Count up item */}
           <div className="col-md-4 col-sm-12">
-            <span className="counter-item" data-from={0} data-to={1207}>
+            <span className="counter-item" data-from={0} data-to={17959}>
               0
             </span>
-            <h4>Users</h4>
+            <h4>Thành viên</h4>
           </div>
         </div>
       </div>
