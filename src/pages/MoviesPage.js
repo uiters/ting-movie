@@ -7,7 +7,7 @@ import {
   Loader,
   HeaderNavigation,
   MainHeader,
-  Filters,
+  SearchForm,
   MovieGridItem,
   Pagination
 } from '../components';
@@ -16,17 +16,20 @@ class MoviesPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: 1
+      page: 1,
+      keyword: ''
     };
   }
 
   componentWillMount() {
     loadPackages();
     this.getPage();
+    this.getKeyword();
   }
 
   componentDidMount() {
-    this.props.onFetchMovies();
+    this.getKeyword();
+    this.props.onFetchMovies(this.state.keyword);
     this.getPage();
   }
 
@@ -37,6 +40,7 @@ class MoviesPage extends Component {
   componentWillReceiveProps(nextProps) {
     const params = new URLSearchParams(nextProps.location.search);
     this.setState({ page: parseInt(params.get('page')) || 1 });
+    this.setState({ keyword: params.get('search-keyword') || '' });
   }
 
   getPage() {
@@ -44,15 +48,22 @@ class MoviesPage extends Component {
     this.setState({ page: parseInt(params.get('page')) || 1 });
   }
 
-  renderMovies() {
-    const { page = 1 } = this.state;
-    const { movies } = this.props;
+  getKeyword() {
+    const params = new URLSearchParams(this.props.location.search);
+    const keyword = params.get('search-keyword') || '';
+    this.setState({ keyword });
+  }
 
-    const perPage = 12;
+  renderMovies() {
+    const { page = 1, keyword } = this.state;
+    const { movies, movieResults } = this.props;
+
+    const perPage = 8;
     const start = (page - 1) * perPage;
     const end = start + perPage;
 
-    return [...movies]
+    const currentMovies = keyword ? movieResults : movies;
+    return [...currentMovies]
       .slice(start, end)
       .map((movie, index) => <MovieGridItem key={index} movie={movie} />);
   }
@@ -60,13 +71,22 @@ class MoviesPage extends Component {
   renderData() {
     const { isFetching, isError } = this.props;
 
-    const movieList = this.renderMovies();
+    const movieList =
+      this.renderMovies().length > 0 ? (
+        this.renderMovies()
+      ) : (
+        <div className="container">
+          <h5 className="title text-center" style={{ color: '#9c3064' }}>
+            Không tìm thấy phim. Vui lòng thử lại!
+          </h5>
+        </div>
+      );
 
     const data = isFetching ? (
       <ClipLoader sizeUnit={'px'} size={40} color={'#9c3064'} />
     ) : isError ? (
-      <h5 className="title" style={{ color: '#9c3064' }}>
-        Nothing to display
+      <h5 className="title text-center" style={{ color: '#9c3064' }}>
+        Không tìm thấy phim. Vui lòng thử lại!
       </h5>
     ) : (
       movieList
@@ -77,15 +97,56 @@ class MoviesPage extends Component {
 
   renderPagination() {
     const { isFetching, isError } = this.props;
-    if (!isFetching && !isError) {
+    if (this.renderMovies().length > 0 && !isFetching && !isError) {
       return (
         <Pagination
           movieCount={this.props.movies.length || 0}
-          perPage={12}
+          perPage={8}
           currentPage={this.state.page || 1}
         />
       );
     }
+  }
+
+  renderMovieTypes() {
+    if (this.renderMovies().length > 0) {
+      return (
+        <ul className="nav justify-content-center mt-5">
+          <li className="nav-item">
+            <a
+              className="nav-link text-danger font-weight-bold"
+              href="#"
+              style={{ fontSize: '24px' }}
+            >
+              Đang chiếu
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              className="nav-link text-secondary"
+              href="#"
+              style={{ fontSize: '24px' }}
+            >
+              Sắp chiếu
+            </a>
+          </li>
+        </ul>
+      );
+    }
+  }
+
+  renderSearchForm() {
+    const { keyword } = this.state;
+    return (
+      <div>
+        <SearchForm />
+        {keyword && (
+          <h5 className="title text-center" style={{ color: '#9c3064' }}>
+          Kết quả tìm kiếm cho "{keyword}".
+        </h5>
+        )}
+      </div>
+    );
   }
 
   render() {
@@ -96,28 +157,8 @@ class MoviesPage extends Component {
         <MainHeader content="Phim" />
         <div className="ptb100">
           <div className="container">
-            <Filters />
-            <ul className="nav justify-content-center">
-              <li className="nav-item">
-                <a
-                  className="nav-link text-danger font-weight-bold"
-                  href="#"
-                  style={{ fontSize: '24px' }}
-                >
-                  Đang chiếu
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link text-secondary"
-                  href="#"
-                  style={{ fontSize: '24px' }}
-                >
-                  Sắp chiếu
-                </a>
-              </li>
-            </ul>
-            {this.renderPagination()}
+            {this.renderSearchForm()}
+            {this.renderMovieTypes()}
             <div className="row">{this.renderData()}</div>
             {this.renderPagination()}
           </div>
@@ -132,6 +173,7 @@ MoviesPage.propTypes = {
   isFetching: PropTypes.bool,
   isError: PropTypes.bool,
   movies: PropTypes.array,
+  movieResults: PropTypes.array,
   onFetchMovies: PropTypes.func
 };
 

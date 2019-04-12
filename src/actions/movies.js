@@ -11,11 +11,19 @@ export const receiveMovies = movies => ({
 
 export const receiveErrors = () => ({ type: types.RECEIVE_ERRORS });
 
-export const fetchMoviesAsync = () => {
+export const searchMovies = keyword => ({
+  type: types.SEARCH_MOVIES,
+  payload: keyword
+});
+
+export const fetchMoviesAsync = (keyword = '') => {
   store.dispatch(fetchMovies());
   return function(dispatch, getState) {
     APIs.fetchMovies()
-      .then(res => dispatch(receiveMovies(res.data.result)))
+      .then(res => {
+        dispatch(receiveMovies(res.data.result))
+        dispatch(searchMovies(keyword))
+      })
       .catch(err => dispatch(receiveErrors()));
   }
 };

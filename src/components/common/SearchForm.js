@@ -5,7 +5,7 @@ export default function() {
     <div className="search-form-wrapper search-form-rev">
       <div className="container">
         {/* ===== START OF SEARCH FORM ===== */}
-        <form id="search-form-1">
+        <form id="search-form-1" action='/movies'>
           <div className="row justify-content-center">
             <div className="col-md-8 col-sm-10 col-12">
               <div className="form-group">
@@ -15,6 +15,7 @@ export default function() {
                   id="search-keyword"
                   className="form-control"
                   placeholder="Nhập tên phim"
+                  required
                 />
                 <button type="submit" className="btn btn-main btn-effect">
                   <i className="fa fa-search" />
