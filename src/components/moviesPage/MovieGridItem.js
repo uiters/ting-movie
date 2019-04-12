@@ -31,7 +31,7 @@ function MovieGridItem({ isColumn, movie }) {
         <div className="poster">
           <img
             src={movie.poster_url}
-            alt={movie.film_name}
+            alt={movie.film_name_vn}
           />
         </div>
         {/* End of Poster */}
@@ -48,7 +48,7 @@ function MovieGridItem({ isColumn, movie }) {
         {/* Start of Movie Details */}
         <div className="movie-details">
           <h4 className="movie-title">
-            <a href="https://github.com/cuongw">{movie.film_name}</a>
+            <a href="https://github.com/cuongw">{movie.film_name_vn}</a>
           </h4>
           <span className="released">{movie.publish_date}</span>
         </div>

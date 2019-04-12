@@ -3,7 +3,8 @@ import * as types from '../constants/actionTypes';
 const initialState = {
   isFetching: false,
   isError: false,
-  movies: []
+  movies: [],
+  movieResults: []
 };
 
 const movies = (state = initialState, action) => {
@@ -28,6 +29,19 @@ const movies = (state = initialState, action) => {
         isError: true,
         isFetching: false,
         movies: []
+      };
+    case types.SEARCH_MOVIES:
+      const keyword = action.payload;
+      return {
+        ...state,
+        movieResults: [
+          ...state.movies.filter(
+            movie =>
+              movie.film_name_vn
+                .toLowerCase()
+                .indexOf(keyword.toLowerCase()) !== -1
+          )
+        ]
       };
     default:
       return state;
