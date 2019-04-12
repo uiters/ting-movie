@@ -7,10 +7,9 @@ export default function() {
         {/* Start of row */}
         <div className="row justify-content-center">
           <div className="col-md-7 text-center">
-            <h2 className="title">Join TingMovie Now!</h2>
+            <h2 className="title">Nhận tin tức từ TingMovie!</h2>
             <h6 className="subtitle">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy consectetuer adipiscing.
+              Đăng ký để nhận các tin tức mới nhất từ TingMovie
             </h6>
           </div>
         </div>
@@ -28,12 +27,12 @@ export default function() {
                     name="EMAIL"
                     className="form-control"
                     id="mc-email"
-                    placeholder="Your Email"
+                    placeholder="Email"
                     autoComplete="off"
                   />
                   <label htmlFor="mc-email" />
                   <button type="submit" className="btn btn-main btn-effect">
-                    Subscribe
+                    Theo dõi
                   </button>
                 </div>
               </div>

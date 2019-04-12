@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { loadPackages } from '../utils';
-import { Loader, HeaderNavigation, SearchForm, MainHeader } from '../components';
+import { Loader, HeaderNavigation, MainHeader } from '../components';
 
 export default class extends Component {
   componentWillMount() {
@@ -17,11 +17,10 @@ export default class extends Component {
             <div className="row">
               <div className="col-md-12">
                 <h2>404</h2>
-                <h3>Page Not Found!</h3>
+                <h3>Sai đường rồi!</h3>
                 <p>
-                  We're sorry, but the page you were looking for doesn't exist.
+                  Xin lỗi thí chủ đã đi lạc rồi, vui lòng lên google map hoặc liên hệ đường tăng để lấy link.
                 </p>
-                <SearchForm />
               </div>
             </div>
           </div>

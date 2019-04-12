@@ -5,19 +5,20 @@ export default function() {
   return (
     <div className="signup-wrapper">
       <div className="small-dialog-headline">
-        <h4 className="text-center">Sign Up</h4>
+        <h4 className="text-center">Đăng ký</h4>
       </div>
       <div className="small-dialog-content">
         {/* Start of Registration form */}
         <form id="cariera_registration" action="#" method="POST">
           <p className="status" />
           <div className="form-group">
-            <label htmlFor="movify_user_login">Username</label>
+            <label htmlFor="movify_user_login">Tên đăng nhập</label>
             <input
               name="movify_user_login"
               id="movify_user_login"
               className="form-control"
               type="text"
+              placeholder="Tên đăng nhập *"
             />
           </div>
           <div className="form-group">
@@ -27,15 +28,17 @@ export default function() {
               id="movify_user_email"
               className="form-control"
               type="email"
+              placeholder="Email *"
             />
           </div>
           <div className="form-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Mật khẩu</label>
             <input
               name="movify_user_pass"
               id="movify_password"
               className="form-control"
               type="password"
+              placeholder="Mật khẩu *"
             />
           </div>
           <div className="form-group">
@@ -49,10 +52,9 @@ export default function() {
         {/* End of Registration form */}
         <div className="bottom-links">
           <span>
-            Already have an account?
-            <a className="signInClick">Sign in</a>
+            Bạn đã có tài khoản?
+            <a className="signInClick"> Đăng nhập</a>
           </span>
-          <a className="forgetPasswordClick pull-right">Forgot Password</a>
         </div>
       </div>{' '}
       {/* .small-dialog-content */}

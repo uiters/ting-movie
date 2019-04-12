@@ -16,7 +16,7 @@ function MainHeader ({ content }) {
           <h2 className="title">{content}</h2>
           <ol className="breadcrumb">
             <li>
-              <Link to='/'>Home</Link>
+              <Link to='/'>Trang chủ</Link>
             </li>
             <li>{content}</li>
           </ol>

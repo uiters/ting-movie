@@ -13,7 +13,7 @@ export default class extends Component {
       <div>
         <Loader />
         <HeaderNavigation isWhite={true} />
-        <MainHeader content="ShowTimes" />
+        <MainHeader content="Lịch Chiếu" />
         <main className="ptb100">
           <div className="container">
             <div className="row">
@@ -26,7 +26,7 @@ export default class extends Component {
                       href="#"
                       style={{ fontSize: '24px' }}
                     >
-                      ShowTimes
+                      Lịch Chiếu
                     </a>
                   </li>
                   <li className="nav-item">
@@ -35,7 +35,7 @@ export default class extends Component {
                       href="#"
                       style={{ fontSize: '24px' }}
                     >
-                      Informations
+                      Thông tin chi tiết
                     </a>
                   </li>
                   <li className="nav-item">
@@ -44,7 +44,7 @@ export default class extends Component {
                       href="#"
                       style={{ fontSize: '24px' }}
                     >
-                      Rating & Reviews
+                      Đánh giá và bình luận
                     </a>
                   </li>
                 </ul>

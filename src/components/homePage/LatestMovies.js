@@ -23,11 +23,11 @@ function LatestMovies({ isFetching, isError, movies }) {
         {/* Start of row */}
         <div className="row">
           <div className="col-md-8">
-            <h2 className="title">Latest Movies</h2>
+            <h2 className="title">Phim mới</h2>
           </div>
           <div className="col-md-4 align-self-center text-right">
             <Link to="/movies" className="btn btn-icon btn-main btn-effect">
-              view all
+              Xem tất cả
               <i className="ti-angle-double-right" />
             </Link>
           </div>

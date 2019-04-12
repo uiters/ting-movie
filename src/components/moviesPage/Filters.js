@@ -9,48 +9,28 @@ export default function() {
           <div className="col-md-3">
             <div className="sort-by-select">
               <select className="chosen-select-no-single">
-                <option>Movies</option>
-                <option>Featured</option>
-                <option>Top Viewed</option>
-                <option>Top Rated</option>
-                <option>Newest</option>
-                <option>Oldest</option>
+                <option>Phim</option>
               </select>
             </div>
           </div>
           <div className="col-md-3">
             <div className="sort-by-select">
               <select className="chosen-select-no-single">
-                <option>Theaters</option>
-                <option>Featured</option>
-                <option>Top Viewed</option>
-                <option>Top Rated</option>
-                <option>Newest</option>
-                <option>Oldest</option>
+                <option>Rạp</option>
               </select>
             </div>
           </div>
           <div className="col-md-3">
             <div className="sort-by-select">
               <select className="chosen-select-no-single">
-                <option>Dates</option>
-                <option>Featured</option>
-                <option>Top Viewed</option>
-                <option>Top Rated</option>
-                <option>Newest</option>
-                <option>Oldest</option>
+                <option>Ngày xem</option>
               </select>
             </div>
           </div>
           <div className="col-md-3">
             <div className="sort-by-select">
               <select className="chosen-select-no-single">
-                <option>Times</option>
-                <option>Featured</option>
-                <option>Top Viewed</option>
-                <option>Top Rated</option>
-                <option>Newest</option>
-                <option>Oldest</option>
+                <option>Suất chiếu</option>
               </select>
             </div>
           </div>
@@ -60,7 +40,7 @@ export default function() {
         <a href="#" className="btn btn-main btn-effect btn-block h-100 text-center" style={{lineHeight: '45px'}}>
           <span>
             <i className="icon-basket" style={{ marginRight: '10px', fontSize: '15px' }} />
-            Get Tickets
+            Mua vé
           </span>
         </a>
       </div>

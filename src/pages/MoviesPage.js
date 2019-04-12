@@ -93,7 +93,7 @@ class MoviesPage extends Component {
       <div>
         <Loader />
         <HeaderNavigation isWhite={true} />
-        <MainHeader content="Movies" />
+        <MainHeader content="Phim" />
         <div className="ptb100">
           <div className="container">
             <Filters />
@@ -104,7 +104,7 @@ class MoviesPage extends Component {
                   href="#"
                   style={{ fontSize: '24px' }}
                 >
-                  Now Playing
+                  Đang chiếu
                 </a>
               </li>
               <li className="nav-item">
@@ -113,7 +113,7 @@ class MoviesPage extends Component {
                   href="#"
                   style={{ fontSize: '24px' }}
                 >
-                  Coming Soon
+                  Sắp chiếu
                 </a>
               </li>
             </ul>
