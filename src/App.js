@@ -8,7 +8,7 @@ import {
   ForgetPassword,
   BackToTop
 } from './components';
-import { NotFoundPage, ContactPage } from './pages';
+import { NotFoundPage, ContactPage, ShowtimesPage } from './pages';
 import { HomePageContainer, MoviesPageContainer } from './containers';
 
 class App extends Component {
@@ -19,6 +19,7 @@ class App extends Component {
         <div className="wrapper">
           <Switch>
             <Route exact path="/" component={HomePageContainer} />
+            <Route path="/showtimes" component={ShowtimesPage} />
             <Route path="/movies" component={MoviesPageContainer} />
             <Route path="/contact" component={ContactPage} />
             <Route component={NotFoundPage} />
