@@ -217,7 +217,7 @@ Author URI: gnodesign.com
                 } else {
                     revapi24 = tpj("#fullscreen-slider").show().revolution({
                         sliderType: "standard",
-						jsFileLocation:"assets/revolution/js/",
+						jsFileLocation:"revolution/js/",
                         sliderLayout: "fullscreen",
                         dottedOverlay: "none",
                         delay: 9000,
@@ -303,7 +303,7 @@ Author URI: gnodesign.com
                 } else {
                     revapi24 = tpj("#fullwidth-slider").show().revolution({
                         sliderType: "hero",
-						jsFileLocation:"assets/revolution/js/",
+						jsFileLocation:"revolution/js/",
                         sliderLayout: "fullwidth",
                         dottedOverlay: "none",
                         delay: 9000,
@@ -364,7 +364,7 @@ Author URI: gnodesign.com
                 } else {
                     revapi24 = tpj("#hero-slider").show().revolution({
                         sliderType: "hero",
-						jsFileLocation:"assets/revolution/js/",
+						jsFileLocation:"revolution/js/",
                         sliderLayout: "fullwidth",
                         dottedOverlay: "none",
                         delay: 9000,
@@ -425,7 +425,7 @@ Author URI: gnodesign.com
                 } else {
                     revapi24 = tpj("#hero-slider2").show().revolution({
                         sliderType: "hero",
-						jsFileLocation:"assets/revolution/js/",
+						jsFileLocation:"revolution/js/",
                         sliderLayout: "fullwidth",
                         dottedOverlay: "none",
                         delay: 9000,
@@ -1036,7 +1036,6 @@ Author URI: gnodesign.com
 	}
 	 
 	loadjscssfile("https://www.googletagmanager.com/gtag/js?id=UA-60264400-7", "js");
-	loadjscssfile("assets/js/google-analytics.js", "js");
         
 
 
