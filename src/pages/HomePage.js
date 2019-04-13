@@ -18,7 +18,7 @@ import {
 
 class HomePage extends Component {
   componentWillMount() {
-    loadPackages();
+    loadPackages(true);
   }
 
   componentDidMount() {
@@ -26,7 +26,7 @@ class HomePage extends Component {
   }
   
   componentWillUpdate() {
-    loadPackages();
+    loadPackages(true);
   }
 
   render() {

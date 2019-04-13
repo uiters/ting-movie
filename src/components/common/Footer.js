@@ -25,11 +25,6 @@ export default function() {
                 <p className="nomargin">
                 SẢN PHẨM CỦA CÔNG TY TNHH MTV TING - DỊCH VỤ XUYÊN QUỐC GIA TING
                 </p>
-                <img className="mt-3"
-                  src="https://s3img.vcdn.vn/123phim/2018/09/9693e0dbb6ceb3b274afeb6aa09a911f.png"
-                  style={{height: "50px"}}
-                  alt='logo'
-                />
               </div>
             </div>
             {/* End of Widget 1 */}
