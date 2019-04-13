@@ -1,3 +1,4 @@
+import viee from 'viee';
 import * as types from '../constants/actionTypes';
 
 const initialState = {
@@ -37,9 +38,9 @@ const movies = (state = initialState, action) => {
         movieResults: [
           ...state.movies.filter(
             movie =>
-              movie.film_name_vn
+              viee(movie.film_name_vn)
                 .toLowerCase()
-                .indexOf(keyword.toLowerCase()) !== -1
+                .indexOf(viee(keyword).toLowerCase()) !== -1
           )
         ]
       };

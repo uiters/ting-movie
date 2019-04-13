@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { MoviesPage } from '../pages';
-import { fetchMoviesAsync } from '../actions/movies';
+import { fetchMoviesAsync } from '../actions';
 
 const mapStateToProps = state => ({
   isFetching: state.movies.isFetching,
