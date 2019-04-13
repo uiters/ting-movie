@@ -1,21 +1,47 @@
 # ting-movie
+
 [![Build Status](https://travis-ci.org/cuongw/ting-movie.svg?branch=master)](https://travis-ci.org/cuongw/ting-movie)
-![GitHub](https://img.shields.io/github/license/cuongw/ting-movie.svg)
+[![GitHub](https://img.shields.io/github/license/cuongw/ting-movie.svg)](https://github.com/cuongw/ting-movie/blob/master/LICENSE)
+
 
 🦄 Find Movie Showtimes & Buy Tickets.
 
-## Install
+<img src="screenshots/screenshot.gif"/>
 
-```bash
+## Features 🎉
+
+- Show times
+- Buy ticket
+- Latest News about movies
+- Show informations films
+- Rating and review films
+
+## Installation 💉
+
+```sh
+$ npm i
+## or
 $ yarn
 ```
 
-## Usage
+## Usage 🎯
 
-```bash
+```sh
+$ npm start
+## or
 $ yarn start
 ```
 
-## License
+## Build 🚀
 
-MIT
+```sh
+$ npm run build
+## or
+$ yarn build
+```
+
+## Team 🙌
+
+| [![Nguyễn Duy Cương](https://github.com/cuongw.png?size=150)](https://github.com/cuongw) | [![Vi Chí Thiện](https://github.com/tvc12.png?size=150)](https://github.com/tvc12) | [<img src="https://github.com/HuyenNgo.png" width="150">](https://github.com/HuyenNgo) |
+| :---: | :---: | :---: |
+| [Nguyen Duy Cuong](https://github.com/cuongw) | [Vi Chi Thien](https://github.com/tvc12) | [Ngo Thi Huyen](https://github.com/HuyenNgo) | 
