@@ -1,6 +1,6 @@
-import loadjs from 'loadjs';
+import loadjs from "loadjs";
 
-export default function (isHome) {
+export default function(isHome) {
   const publicUrl = process.env.PUBLIC_URL;
   loadjs([
     `${publicUrl}/js/custom.js`,
@@ -15,15 +15,14 @@ export default function (isHome) {
     `${publicUrl}/js/imagesloaded.pkgd.min.js`,
     `${publicUrl}/js/isotope.pkgd.min.js`,
     `${publicUrl}/js/headroom.js`,
-    `${publicUrl}/js/custom.js`,]);
-    if (isHome)
-    {
-      loadjs([
-        `${publicUrl}/revolution/js/jquery.themepunch.tools.min.js`,
-        `${publicUrl}/revolution/js/jquery.themepunch.revolution.min.js`,
-      ]);
-    }
-
+    `${publicUrl}/js/custom.js`
+  ]);
+  if (isHome) {
+    loadjs([
+      `${publicUrl}/revolution/js/jquery.themepunch.tools.min.js`,
+      `${publicUrl}/revolution/js/jquery.themepunch.revolution.min.js`
+    ]);
+  }
   loadjs([
     `${publicUrl}/revolution/js/extensions/revolution.extension.actions.min.js`,
     `${publicUrl}/revolution/js/extensions/revolution.extension.carousel.min.js`,
@@ -33,6 +32,6 @@ export default function (isHome) {
     `${publicUrl}/revolution/js/extensions/revolution.extension.navigation.min.js`,
     `${publicUrl}/revolution/js/extensions/revolution.extension.parallax.min.js`,
     `${publicUrl}/revolution/js/extensions/revolution.extension.slideanims.min.js`,
-    `${publicUrl}/revolution/js/extensions/revolution.extension.video.min.js`,
+    `${publicUrl}/revolution/js/extensions/revolution.extension.video.min.js`
   ]);
 }
