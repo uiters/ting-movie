@@ -5,7 +5,7 @@ const initialState = {
   isFetching: false,
   isError: false,
   movies: [],
-  movieResults: []
+  movieResults: [] // current search movies.
 };
 
 const movies = (state = initialState, action) => {

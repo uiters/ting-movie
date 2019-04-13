@@ -2,17 +2,18 @@ import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import nanoid from 'nanoid';
+import { Link } from 'react-router-dom';
 
 function MovieGridItem({ isColumn, movie }) {
   const containerClassName = classNames({
-    'item': true,
+    item: true,
     'col-lg-3 col-md-6 col-sm-12 mt-4': isColumn
   });
 
   const renderStars = () => {
     const totalStars = Math.floor(movie.imdb_point / 2);
     const starsItems = [];
-    
+
     for (let i = 0; i < totalStars; i++) {
       starsItems.push(<i key={nanoid()} className="fa fa-star" />);
     }
@@ -29,10 +30,7 @@ function MovieGridItem({ isColumn, movie }) {
       <div className="movie-box-1">
         {/* Start of Poster */}
         <div className="poster">
-          <img
-            src={movie.poster_url}
-            alt={movie.film_name_vn}
-          />
+          <img src={movie.poster_url} alt={movie.film_name_vn} />
         </div>
         {/* End of Poster */}
         {/* Start of Buttons */}
@@ -48,7 +46,7 @@ function MovieGridItem({ isColumn, movie }) {
         {/* Start of Movie Details */}
         <div className="movie-details">
           <h4 className="movie-title">
-            <a href="https://github.com/cuongw">{movie.film_name_vn}</a>
+            <Link to={`/movies/${movie.film_id}`}>{movie.film_name_vn}</Link>
           </h4>
           <span className="released">{movie.publish_date}</span>
         </div>

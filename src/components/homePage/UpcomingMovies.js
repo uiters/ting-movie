@@ -4,7 +4,7 @@ export default function() {
   return (
     <section
       className="upcoming-movies parallax ptb100"
-      data-background="images/posters/movie-collection.jpg"
+      data-background={`${process.env.PUBLIC_URL}/images/posters/movie-collection.jpg`}
       data-color="#3e4555"
       data-color-opacity="0.95"
     >

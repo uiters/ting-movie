@@ -61,13 +61,6 @@ function HeaderNavigation({ isWhite }) {
                   Lịch Chiếu
                 </Link>
               </li>
-              {/* Menu Item */}
-              <li className="nav-item">
-                <Link className="nav-link" to="/movies">
-                  Phim
-                </Link>
-              </li>
-              {/* Menu Item */}
               <li className="nav-item">
                 <Link className="nav-link" to="/blog">
                   Tin Tức
