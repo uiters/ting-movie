@@ -5,7 +5,7 @@ import { Loader, HeaderNavigation, MainHeader } from '../components';
 import { MovieMainInfo, MovieShowtimes } from '../components';
 export default class extends Component {
   componentWillMount() {
-    loadPackages();
+    loadPackages(false);
   }
 
   render() {

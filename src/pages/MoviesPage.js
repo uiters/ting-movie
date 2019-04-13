@@ -22,7 +22,7 @@ class MoviesPage extends Component {
   }
 
   componentWillMount() {
-    loadPackages();
+    loadPackages(false);
     this.getPage();
     this.getKeyword();
   }
@@ -34,7 +34,7 @@ class MoviesPage extends Component {
   }
 
   componentWillUpdate() {
-    loadPackages();
+    loadPackages(false);
   }
 
   componentWillReceiveProps(nextProps) {
