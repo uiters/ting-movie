@@ -22,7 +22,7 @@ export const fetchMoviesAsync = (keyword = '') => {
     APIs.fetchMovies()
       .then(res => {
         dispatch(receiveMovies(res.data.result))
-        dispatch(searchMovies(keyword))
+        dispatch(searchMovies(keyword.trim()))
       })
       .catch(err => dispatch(receiveErrors()));
   }
