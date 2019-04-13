@@ -8,8 +8,12 @@ import {
   ForgetPassword,
   BackToTop
 } from './components';
-import { NotFoundPage, ContactPage, ShowtimesPage } from './pages';
-import { HomePageContainer, MoviesPageContainer } from './containers';
+import {
+  HomePageContainer,
+  ShowtimesPageContainer,
+  MoviePageContainer
+} from './containers';
+import { NotFoundPage, ContactPage } from './pages';
 
 class App extends Component {
   render() {
@@ -19,8 +23,8 @@ class App extends Component {
         <div className="wrapper">
           <Switch>
             <Route exact path="/" component={HomePageContainer} />
-            <Route path="/showtimes" component={ShowtimesPage} />
-            <Route path="/movies" component={MoviesPageContainer} />
+            <Route path="/showtimes" component={ShowtimesPageContainer} />
+            <Route path="/movies" component={MoviePageContainer} />
             <Route path="/contact" component={ContactPage} />
             <Route component={NotFoundPage} />
           </Switch>

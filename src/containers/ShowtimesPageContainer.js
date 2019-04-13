@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { MoviesPage } from '../pages';
+import { ShowtimesPage } from '../pages';
 import { fetchMoviesAsync } from '../actions';
 
 const mapStateToProps = state => ({
@@ -16,4 +16,4 @@ const mapDispatchToProps = (dispatch, props) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(MoviesPage);
+)(ShowtimesPage);

@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-export const fetchMovies = () => {
+export const getMovieDetail = movieId => {
   const params = {
     param: {
-      url: '/film/list?status=2',
-      keyCache: 'showing-film'
+      url: `/film/detail?film_id=${movieId}`,
+      keyCache: `movie-detail${movieId}`
     },
     method: 'GET'
   };
