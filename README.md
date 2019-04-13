@@ -5,7 +5,10 @@
 
 🦄 Find Movie Showtimes & Buy Tickets.
 
-![](screenshots/screenshot.gif)
+<p align="center">
+    <img src="screenshots/screenshot.gif"/>
+</p>
+
 ## Features
 - Show times
 - Buy ticket
