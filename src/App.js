@@ -24,7 +24,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={HomePageContainer} />
             <Route path="/showtimes" component={ShowtimesPageContainer} />
-            <Route path="/movies" component={MoviePageContainer} />
+            <Route path="/movies/:id" component={MoviePageContainer} />
             <Route path="/contact" component={ContactPage} />
             <Route component={NotFoundPage} />
           </Switch>
