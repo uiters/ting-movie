@@ -28,6 +28,7 @@ class ShowtimesPage extends Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     this.getKeyword();
     this.props.onFetchMovies(this.state.keyword);
     this.getPage();
