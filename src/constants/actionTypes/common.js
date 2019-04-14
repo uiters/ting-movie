@@ -1,1 +1,0 @@
-export const RECEIVE_ERRORS = 'RECEIVE_ERRORS';

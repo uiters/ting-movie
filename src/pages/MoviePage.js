@@ -19,6 +19,16 @@ class MoviePage extends Component {
     window.scrollTo(0, 0);
     const movieId = this.props.match.params.id;
     this.props.onFetchMovie(movieId);
+
+    this.props.onFetchCinemas();
+
+    // FIXME: need an id for first cinema types.
+    // const cinemaId = this.props.cinemaTypes[0].id;
+    // TODO: typeOf cinemaId is string
+    const cinemaId = '4';
+    
+    const date = new Date();
+    this.props.onFetchSessions(movieId, cinemaId, date);
   }
 
   componentDidUpdate() {
@@ -60,7 +70,18 @@ class MoviePage extends Component {
   }
 
   render() {
-    const { isFetching, isError, movie } = this.props;
+    const {
+      isFetchingMovie,
+      isFetchingCinemas,
+      isFetchingSessions,
+      isErrorCinemas,
+      isErrorMovie,
+      isErrorSessions,
+      movie,
+      cinemaTypes,
+      sessionResults,
+      onFilterSessions
+    } = this.props;
 
     return (
       <div>
@@ -72,12 +93,20 @@ class MoviePage extends Component {
             <div className="row">
               <div className="col-md-12">
                 <MovieMainInfo
-                  isFetching={isFetching}
-                  isError={isError}
+                  isFetching={isFetchingMovie}
+                  isError={isErrorMovie}
                   movie={movie}
                 />
                 {this.renderOptions()}
-                <MovieShowtimes />
+                <MovieShowtimes
+                  isFetchingCinemas={isFetchingCinemas}
+                  isFetchingSessions={isFetchingSessions}
+                  isErrorCinemas={isErrorCinemas}
+                  isErrorSessions={isErrorSessions}
+                  cinemaTypes={cinemaTypes}
+                  sessionResults={sessionResults}
+                  onFilterSessions={onFilterSessions}
+                />
               </div>
             </div>
           </div>
@@ -89,10 +118,19 @@ class MoviePage extends Component {
 
 MoviePage.propTypes = {
   match: PropTypes.object,
-  isFetching: PropTypes.bool,
-  isError: PropTypes.bool,
+  isFetchingMovie: PropTypes.bool,
+  isFetchingCinemas: PropTypes.bool,
+  isFetchingSessions: PropTypes.bool,
+  isErrorMovie: PropTypes.bool,
+  isErrorCinemas: PropTypes.bool,
+  isErrorSessions: PropTypes.bool,
   movie: PropTypes.object,
-  onFetchMovie: PropTypes.func
+  cinemaTypes: PropTypes.array,
+  sessionResults: PropTypes.object,
+  onFetchMovie: PropTypes.func,
+  onFetchCinemas: PropTypes.func,
+  onFetchSessions: PropTypes.func,
+  onFilterSessions: PropTypes.func
 };
 
 export default MoviePage;

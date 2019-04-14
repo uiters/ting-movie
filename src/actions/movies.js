@@ -1,7 +1,6 @@
 import store from '../store';
-import * as types from '../constants';
+import * as types from '../constants/actionTypes';
 import * as APIs from '../api';
-import { receiveErrors } from './common';
 
 export const fetchMovies = () => ({ type: types.FETCH_MOVIES });
 
@@ -15,6 +14,8 @@ export const searchMovies = keyword => ({
   payload: keyword
 });
 
+export const receiveMoviesErrors = () => ({ type: types.MOVIES_ERRORS });
+
 export const fetchMoviesAsync = (keyword = '') => {
   store.dispatch(fetchMovies());
   return function(dispatch, getState) {
@@ -23,6 +24,6 @@ export const fetchMoviesAsync = (keyword = '') => {
         dispatch(receiveMovies(res.data.result));
         dispatch(searchMovies(keyword.trim()));
       })
-      .catch(err => dispatch(receiveErrors()));
+      .catch(err => dispatch(receiveMoviesErrors()));
   };
 };

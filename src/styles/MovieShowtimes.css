@@ -1,0 +1,29 @@
+.cinema-type {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 250ms all ease-in-out;
+}
+
+.cinema-type:hover {
+  opacity: 1;
+  font-weight: bold;
+  transform: scale(1.15, 1.15)
+}
+.cinema-type-active {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.local-time {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 250ms all ease-in-out;
+}
+
+.local-time:hover {
+  opacity: 1;
+  transform: scale(1.15, 1.15)
+}
+.local-time-active {
+  opacity: 1;
+}

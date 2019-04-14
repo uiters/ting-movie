@@ -22,7 +22,7 @@ const movie = (state = initialState, action) => {
         isFetching: false,
         isError: false
       };
-    case types.RECEIVE_ERRORS:
+    case types.MOVIE_ERRORS:
       return {
         ...state,
         isError: true,

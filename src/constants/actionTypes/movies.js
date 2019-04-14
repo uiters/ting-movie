@@ -1,3 +1,4 @@
 export const FETCH_MOVIES = 'FETCH_MOVIES';
 export const RECEIVE_MOVIES = 'RECEIVE_MOVIES';
 export const SEARCH_MOVIES = 'SEARCH_MOVIES';
+export const MOVIES_ERRORS = 'MOVIES_ERRORS';
