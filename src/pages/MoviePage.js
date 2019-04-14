@@ -16,8 +16,8 @@ class MoviePage extends Component {
   }
 
   componentDidMount() {
-    this.props.onFetchMovie('2052');
-    // TODO: get movieId
+    const movieId = this.props.match.params.id;
+    this.props.onFetchMovie(movieId);
   }
 
   componentDidUpdate() {
@@ -87,6 +87,7 @@ class MoviePage extends Component {
 }
 
 MoviePage.propTypes = {
+  match: PropTypes.object,
   isFetching: PropTypes.bool,
   isError: PropTypes.bool,
   movie: PropTypes.object,
