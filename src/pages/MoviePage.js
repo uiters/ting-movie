@@ -16,6 +16,7 @@ class MoviePage extends Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0);
     const movieId = this.props.match.params.id;
     this.props.onFetchMovie(movieId);
   }
