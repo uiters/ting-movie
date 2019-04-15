@@ -35,13 +35,13 @@ $ npm i
 $ yarn
 ```
 
-You're wanting to run demo now. Skip to [Usage](usage)
+You're wanting to run demo now. Skip to [Usage](#usage)
 
-Step 3* (option): setup hook server
+**Step 3*** (option): setup hook server
 
-Upload all file at folder `server` in your hosting or localhost with server apache.
+- Upload all file at folder `server` in your hosting or localhost with server apache.
 
-Edit url at lines 4 each files in folder `src/api` (**except** `index.js`)
+- Edit url at lines 4 each files in folder `src/api` (**except** `index.js`)
 
 Example:
 
