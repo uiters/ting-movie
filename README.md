@@ -23,7 +23,7 @@
 **Step 1**: clone the project
 
 ```sh
-$ git clone git@github.com:cuongw/ting-movie.git
+$ git clone https://github.com/cuongw/ting-movie.git
 $ cd ting-movie
 ```
 
