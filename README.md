@@ -1,12 +1,10 @@
-# ting-movie
+﻿# ting-movie
 
 [![Build Status](https://travis-ci.org/cuongw/ting-movie.svg?branch=master)](https://travis-ci.org/cuongw/ting-movie)
 [![GitHub](https://img.shields.io/github/license/cuongw/ting-movie.svg)](https://github.com/cuongw/ting-movie/blob/master/LICENSE)
 
 
 🦄 Find Movie Showtimes & Buy Tickets.
-
-![](screenshots/home.gif)
 
 ![](screenshots/showtime.gif)
 
