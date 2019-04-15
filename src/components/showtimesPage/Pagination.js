@@ -52,7 +52,7 @@ class Pagination extends Component {
     return pages.map((page, index) => (
       <li key={index}>
         <Link
-          to={{ pathname: '/movies', search: `?page=${page}` }}
+          to={{ pathname: '/showtimes', search: `?page=${page}` }}
           className={page === currentPage ? 'current-page' : ''}
         >
           {page}
@@ -71,7 +71,7 @@ class Pagination extends Component {
               {currentPage !== 1 && (
                 <Link
                   to={{
-                    pathname: '/movies',
+                    pathname: '/showtimes',
                     search: `?page=${currentPage - 1}`
                   }}
                 >
@@ -82,7 +82,7 @@ class Pagination extends Component {
               {currentPage !== Math.ceil(movieCount / perPage) && (
                 <Link
                   to={{
-                    pathname: '/movies',
+                    pathname: '/showtimes',
                     search: `?page=${currentPage + 1}`
                   }}
                 >

@@ -26,7 +26,7 @@ function LatestMovies({ isFetching, isError, movies }) {
             <h2 className="title">Phim mới</h2>
           </div>
           <div className="col-md-4 align-self-center text-right">
-            <Link to="/movies" className="btn btn-icon btn-main btn-effect">
+            <Link to="/showtimes" className="btn btn-icon btn-main btn-effect">
               Xem tất cả
               <i className="ti-angle-double-right" />
             </Link>

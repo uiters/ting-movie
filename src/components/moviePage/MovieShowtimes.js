@@ -156,7 +156,7 @@ class MovieShowtimes extends Component {
       const { cinemas } = sessionResults;
       for (let key in cinemas) {
         sessions.push(
-          <div key={nanoid()} className="d-flex py-4 px-3 border-bottom">
+          <div key={nanoid()} className="d-flex py-4 px-3 border-bottom movie-session">
             <div className="d-flex flex-column mr-3">
               <img
                 width="50"

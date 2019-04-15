@@ -27,3 +27,7 @@
 .local-time-active {
   opacity: 1;
 }
+
+.movie-session {
+  transition: 500ms all ease-in-out;
+}
