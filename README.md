@@ -77,7 +77,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="http://cuongw.me"><img src="https://avatars0.githubusercontent.com/u/34389409?v=4" width="100px;" alt="Cuong Duy Nguyen"/><br /><sub><b>Cuong Duy Nguyen</b></sub></a><br /><a href="https://github.com/cuongw/ting-movie/commits?author=cuongw" title="Documentation">📖</a> <a href="https://github.com/cuongw/ting-movie/commits?author=cuongw" title="Code">💻</a></td></tr></table>
+<table><tr><td align="center"><a href="http://cuongw.me"><img src="https://avatars0.githubusercontent.com/u/34389409?v=4" width="100px;" alt="Cuong Duy Nguyen"/><br /><sub><b>Cuong Duy Nguyen</b></sub></a><br /><a href="https://github.com/cuongw/ting-movie/commits?author=cuongw" title="Documentation">📖</a> <a href="https://github.com/cuongw/ting-movie/commits?author=cuongw" title="Code">💻</a> <a href="https://github.com/cuongw/ting-movie/commits?author=cuongw" title="Tests">⚠️</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 

@@ -17,7 +17,8 @@
       "profile": "http://cuongw.me",
       "contributions": [
         "doc",
-        "code"
+        "code",
+        "test"
       ]
     }
   ],
