@@ -1,4 +1,5 @@
 ﻿# ting-movie
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
 [![Build Status](https://travis-ci.org/cuongw/ting-movie.svg?branch=master)](https://travis-ci.org/cuongw/ting-movie)
 [![GitHub](https://img.shields.io/github/license/cuongw/ting-movie.svg)](https://github.com/cuongw/ting-movie/blob/master/LICENSE)
@@ -69,3 +70,15 @@ $ yarn build
 | [![Nguyễn Duy Cương](https://github.com/cuongw.png?size=150)](https://github.com/cuongw) | [![Vi Chí Thiện](https://github.com/tvc12.png?size=150)](https://github.com/tvc12) | [<img src="https://github.com/HuyenNgo.png" width="150">](https://github.com/HuyenNgo) |
 | :---: | :---: | :---: |
 | [Nguyen Duy Cuong](https://github.com/cuongw) | [Vi Chi Thien](https://github.com/tvc12) | [Ngo Thi Huyen](https://github.com/HuyenNgo) |
+
+## Contributors
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+<table><tr><td align="center"><a href="http://cuongw.me"><img src="https://avatars0.githubusercontent.com/u/34389409?v=4" width="100px;" alt="Cuong Duy Nguyen"/><br /><sub><b>Cuong Duy Nguyen</b></sub></a><br /><a href="https://github.com/cuongw/ting-movie/commits?author=cuongw" title="Documentation">📖</a></td></tr></table>
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
