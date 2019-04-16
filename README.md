@@ -1,7 +1,7 @@
 ﻿# ting-movie
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
-[![Build Status](https://travis-ci.org/cuongw/ting-movie.svg?branch=master?style=flat-square)](https://travis-ci.org/cuongw/ting-movie)
+[![Build Status](https://travis-ci.org/cuongw/ting-movie.svg?branch=master)](https://travis-ci.org/cuongw/ting-movie)
 [![GitHub](https://img.shields.io/github/license/cuongw/ting-movie.svg?style=flat-square)](https://github.com/cuongw/ting-movie/blob/master/LICENSE)
 
 
