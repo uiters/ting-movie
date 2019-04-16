@@ -20,7 +20,8 @@
         "design",
         "doc",
         "review",
-        "maintenance"
+        "maintenance",
+        "test"
       ]
     }
   ],
