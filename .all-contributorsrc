@@ -34,7 +34,8 @@
         "doc",
         "tool",
         "maintenance",
-        "question"
+        "question",
+        "test"
       ]
     }
   ],
