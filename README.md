@@ -1,5 +1,5 @@
 ﻿# ting-movie
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 [![Build Status](https://travis-ci.org/cuongw/ting-movie.svg?branch=master)](https://travis-ci.org/cuongw/ting-movie)
 [![GitHub](https://img.shields.io/github/license/cuongw/ting-movie.svg)](https://github.com/cuongw/ting-movie/blob/master/LICENSE)
@@ -71,7 +71,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table><tr><td align="center"><a href="http://cuongw.me"><img src="https://avatars0.githubusercontent.com/u/34389409?v=4" width="100px;" alt="Cuong Duy Nguyen"/><br /><sub><b>Cuong Duy Nguyen</b></sub></a><br /><a href="https://github.com/cuongw/ting-movie/commits?author=cuongw" title="Code">💻</a> <a href="#design-cuongw" title="Design">🎨</a> <a href="https://github.com/cuongw/ting-movie/commits?author=cuongw" title="Documentation">📖</a> <a href="#review-cuongw" title="Reviewed Pull Requests">👀</a> <a href="#maintenance-cuongw" title="Maintenance">🚧</a> <a href="https://github.com/cuongw/ting-movie/commits?author=cuongw" title="Tests">⚠️</a></td></tr></table>
+<table><tr><td align="center"><a href="http://cuongw.me"><img src="https://avatars0.githubusercontent.com/u/34389409?v=4" width="100px;" alt="Cuong Duy Nguyen"/><br /><sub><b>Cuong Duy Nguyen</b></sub></a><br /><a href="https://github.com/cuongw/ting-movie/commits?author=cuongw" title="Code">💻</a> <a href="#design-cuongw" title="Design">🎨</a> <a href="https://github.com/cuongw/ting-movie/commits?author=cuongw" title="Documentation">📖</a> <a href="#review-cuongw" title="Reviewed Pull Requests">👀</a> <a href="#maintenance-cuongw" title="Maintenance">🚧</a> <a href="https://github.com/cuongw/ting-movie/commits?author=cuongw" title="Tests">⚠️</a></td><td align="center"><a href="https://www.facebook.com/tvc1212"><img src="https://avatars2.githubusercontent.com/u/35712888?v=4" width="100px;" alt="Thien Chi Vi"/><br /><sub><b>Thien Chi Vi</b></sub></a><br /><a href="https://github.com/cuongw/ting-movie/commits?author=tvc12" title="Code">💻</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
