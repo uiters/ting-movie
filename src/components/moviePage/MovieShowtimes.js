@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { ClipLoader } from 'react-spinners';
 import moment from 'moment';
 import classNames from 'classnames';
-import nanoid from 'nanoid';
+import thinid from 'thinid';
 import '../../styles/MovieShowtimes.css';
 
 class MovieShowtimes extends Component {
@@ -104,7 +104,7 @@ class MovieShowtimes extends Component {
     for (let i = 0; i < 7; i++) {
       timeComponents.push(
         <div
-          key={nanoid()}
+          key={thinid()}
           className={classNames(
             'd-flex flex-column align-items-center m-0 p-0 local-time',
             {
@@ -156,7 +156,7 @@ class MovieShowtimes extends Component {
       const { cinemas } = sessionResults;
       for (let key in cinemas) {
         sessions.push(
-          <div key={nanoid()} className="d-flex py-4 px-3 border-bottom movie-session">
+          <div key={thinid()} className="d-flex py-4 px-3 border-bottom movie-session">
             <div className="d-flex flex-column mr-3">
               <img
                 width="50"
@@ -191,7 +191,7 @@ class MovieShowtimes extends Component {
       }
     }
     if (!sessions.length) {
-      sessions.push(<h5 key={nanoid()} className="title text-center mt-3" style={{ color: '#9c3064' }}>
+      sessions.push(<h5 key={thinid()} className="title text-center mt-3" style={{ color: '#9c3064' }}>
       Không có suất chiếu.
     </h5>);
     }
