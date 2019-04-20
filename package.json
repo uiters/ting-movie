@@ -8,7 +8,6 @@
     "jquery": "^3.3.1",
     "loadjs": "^3.6.0",
     "moment": "^2.24.0",
-    "nanoid": "^2.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
@@ -18,6 +17,7 @@
     "react-spinners": "^0.5.3",
     "redux": "^4.0.1",
     "redux-thunk": "^2.3.0",
+    "thinid": "^0.2.0",
     "viee": "^0.1.2"
   },
   "scripts": {
