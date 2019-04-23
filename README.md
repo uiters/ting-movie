@@ -11,11 +11,13 @@
 
 ## Features
 
-- Show times
-- Buy ticket
+- Movie showtime
+- Check empty seats
 - Latest News about movies
-- Show informations films
-- Rating and review films
+- Show movie informations
+- Rating and review movies
+- Book tickets
+- Buy tickets
 
 ## Installation
 
@@ -30,7 +32,7 @@ $ cd ting-movie
 
 ```sh
 $ npm i
-## or
+# or
 $ yarn
 ```
 
@@ -52,7 +54,7 @@ More informations about API. See [API tutorial](server/README.md)
 
 ```sh
 $ npm start
-## or
+# or
 $ yarn start
 ```
 
@@ -60,7 +62,7 @@ $ yarn start
 
 ```sh
 $ npm run build
-## or
+# or
 $ yarn build
 ```
 
@@ -75,3 +77,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## License
+
+MIT [cuongw](https://github.com/cuongw)
