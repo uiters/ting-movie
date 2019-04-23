@@ -6734,11 +6734,6 @@ nan@^2.9.2:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.13.2.tgz#f51dc7ae66ba7d5d55e1e6d4d8092e802c9aefe7"
   integrity sha512-TghvYc72wlMGMVMluVo9WRJc0mB8KxxF/gZ4YYFy7V2ZQX9l7rgbPg7vjS9mt6U5HXODVFVI2bOduCzwOMv/lw==
 
-nanoid@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-2.0.1.tgz#deb55cac196e3f138071911dabbc3726eb048864"
-  integrity sha512-k1u2uemjIGsn25zmujKnotgniC/gxQ9sdegdezeDiKdkDW56THUMqlz3urndKCXJxA6yPzSZbXx/QCMe/pxqsA==
-
 nanomatch@^1.2.9:
   version "1.2.13"
   resolved "https://registry.yarnpkg.com/nanomatch/-/nanomatch-1.2.13.tgz#b87a8aa4fc0de8fe6be88895b38983ff265bd119"
@@ -9848,6 +9843,11 @@ text-table@0.2.0, text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
+thinid@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/thinid/-/thinid-0.2.1.tgz#4e1a446bb67859a52ffc9409677959575a63a1b2"
+  integrity sha512-Fh72u9Wb281HAcCUDPe9Ss79xVjhfKhHo/ZMQjPFJ4QcZKRx+EkkAN9k+nPPt+oHxdTnheGQ4YaprL5so3SI/Q==
+
 throat@^4.0.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/throat/-/throat-4.1.0.tgz#89037cbc92c56ab18926e6ba4cbb200e15672a6a"
@@ -10305,10 +10305,10 @@ vfile@^3.0.0, vfile@^3.0.1:
     unist-util-stringify-position "^1.0.0"
     vfile-message "^1.0.0"
 
-viee@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/viee/-/viee-0.1.2.tgz#8529a7fe5c3fc0deaa8ef6892fac059d9bd7feda"
-  integrity sha512-GnNCOxG3IHe5h7+IEBX7WCHE6D1l6tYpdo0Anw02C29CgcYS7eSmZ6iRhVWIoibB2aBCXrpArWuJCvnd8ZS75A==
+viee@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/viee/-/viee-0.2.0.tgz#f2d39d615e5cccc5608e16b4789965052ee8ec02"
+  integrity sha512-+uOe6y5ZotixZGF9QomvYq/VG0xlsBTwsDkyv0x843jTXulEJ2++sIE3AUkZvruof5pse8/Eyp5n4231saH0Sw==
 
 vm-browserify@0.0.4:
   version "0.0.4"

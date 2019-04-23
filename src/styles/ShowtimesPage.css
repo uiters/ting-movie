@@ -1,0 +1,12 @@
+.movie-type {
+  cursor: pointer;
+  transition: 400ms all ease-in-out;
+}
+
+.movie-type:hover {
+  transform: scale(1.15, 1.15);
+}
+
+.movie-type-active {
+  transform: scale(1.15, 1.15);
+}

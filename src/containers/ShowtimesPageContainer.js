@@ -1,16 +1,21 @@
 import { connect } from 'react-redux';
 import { ShowtimesPage } from '../pages';
-import { fetchMoviesAsync } from '../actions';
+import { fetchComingMoviesAsync, fetchMoviesAsync } from '../actions';
 
 const mapStateToProps = state => ({
   isFetching: state.movies.isFetching,
+  isComingFetching: state.comingMovies.isFetching,
   isError: state.movies.isError,
+  isComingError: state.comingMovies.isError,
   movies: state.movies.movies,
-  movieResults: state.movies.movieResults
+  comingMovies: state.comingMovies.movies,
+  movieResults: state.movies.movieResults,
+  comingMovieResults: state.comingMovies.movieResults
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
-  onFetchMovies: keyword => dispatch(fetchMoviesAsync(keyword))
+  onFetchMovies: keyword => dispatch(fetchMoviesAsync(keyword)),
+  onFetchComingMovies: keyword => dispatch(fetchComingMoviesAsync(keyword))
 });
 
 export default connect(
