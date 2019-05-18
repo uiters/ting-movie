@@ -6,7 +6,7 @@
 [![Hits-of-Code](https://hitsofcode.com/github/cuongw/ting-movie)](https://hitsofcode.com/view/github/cuongw/ting-movie)
 [![GitHub](https://img.shields.io/github/license/cuongw/ting-movie.svg)](https://github.com/cuongw/ting-movie/blob/master/LICENSE)
 
-🎬 Easy way to view movie showtimes at Ho Chi Minh(🇻🇳 Vietnam) cinemas.
+🎬 Easy way to view movie showtimes at cinemas in Ho Chi Minh city(🇻🇳 Vietnam).
 
 ![screenshot](screenshots/showtime.gif)
 
