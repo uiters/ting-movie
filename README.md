@@ -1,23 +1,19 @@
-﻿# ting-movie
+﻿# Ting Movie
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg)](#contributors)
 [![Build Status](https://travis-ci.org/cuongw/ting-movie.svg?branch=master)](https://travis-ci.org/cuongw/ting-movie)
-[![GitHub](https://img.shields.io/github/license/cuongw/ting-movie.svg?style=flat-square)](https://github.com/cuongw/ting-movie/blob/master/LICENSE)
+![david](https://img.shields.io/david/cuongw/ting-movie.svg)
+[![Hits-of-Code](https://hitsofcode.com/github/cuongw/ting-movie)](https://hitsofcode.com/view/github/cuongw/ting-movie)
+[![GitHub](https://img.shields.io/github/license/cuongw/ting-movie.svg)](https://github.com/cuongw/ting-movie/blob/master/LICENSE)
 
+🎬 Easy way to view movie showtimes at Ho Chi Minh(🇻🇳 Vietnam) cinemas.
 
-🦄 Find Movie Showtimes & Buy Tickets.
-
-![](screenshots/showtime.gif)
+![screenshot](screenshots/showtime.gif)
 
 ## Features
 
-- Movie showtime
-- Check empty seats
-- Latest News about movies
-- Show movie informations
-- Rating and review movies
-- Book tickets
-- Buy tickets
+- Movie informations (trailer, IMDb point, duration, description, publish date).
+- Movie showtimes by date and by cinema.
 
 ## Installation
 
