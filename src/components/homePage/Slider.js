@@ -14,7 +14,7 @@ export default function() {
           <li data-transition="fade">
             {/* MAIN IMAGE */}
             <img
-              src="https://s3img.vcdn.vn/123phim/2019/04/avengers-endgame-15561783796536.jpg"
+              src="https://s3img.vcdn.vn/123phim/2019/06/mib-15611053679886.jpg"
               alt="slider 1"
               title="slider-bg"
               data-bgposition="center center"
@@ -52,7 +52,7 @@ export default function() {
           >
             {/* MAIN IMAGE */}
             <img
-              src="https://s3img.vcdn.vn/123phim/2019/05/fan-cung-15567968250560.jpg"
+              src="https://s3img.vcdn.vn/123phim/2019/06/nhen-15615549214462.jpg"
               alt="slider 2"
               title="slider-bg"
               data-bgposition="center top"
@@ -86,7 +86,7 @@ export default function() {
           >
             {/* MAIN IMAGE */}
             <img
-              src="https://s3img.vcdn.vn/123phim/2019/05/dolls-15572261478263.jpg"
+              src="https://s3img.vcdn.vn/123phim/2019/06/para-15611033899645.jpg"
               alt="slider 3"
               data-bgposition="center top"
               data-bgfit="cover"
