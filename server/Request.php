@@ -8,7 +8,7 @@ class Request {
 
     public function post() {
         $data = $this->data;
-        $url = 'https://123phim.vn/apitomapp';
+        $url = 'https://tix.vn/apitomapp';
         $options = array(
             'http' => array(
                 'header'  => [ 
